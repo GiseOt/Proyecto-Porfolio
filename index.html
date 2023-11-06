@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css"><script src="https://kit.fontawesome.com/04baa38fa8.js" crossorigin="anonymous"></script>
+
     <title>Proyecto Portfolio</title>
 </head>
 <body>
@@ -21,24 +22,85 @@
         <!--seccion hola-->
         <section class="section__presentacion" id="hola">
             <div class="presentacion__hola">
-                <h1>¡Hola! soy <span class="presentacion__nombre--color">Gisella Ortiz de la Tabla</span></h1>
+                <h1>¡Hola! soy <span class="presentacion__nombre--color">Gisella</span></h1>
                 <p class="presentacion__parrafo">Desarrolladora, amante de la naturaleza y fans de Friends.</span></p>
                 <a href="#proyectos" class="link__proyectos--color">Mira mis proyectos</a>
             </div>
             <div class="presentacion__imagen">
-                <img src="./imagenes/imagen-presentacion.png" alt="Mujer con un ordenador">
+                <img src="./imagenes/imagen presentacion.png" alt="Mujer con un ordenador">
             </div>
 
         </section>
         <!--seccion conocimientos-->
-        <section class="section__conocimientos" id="conocimientos"></section>
-        <!--seccion cita-->
-        <section class="section__cita"></section>
-        <!--seccion proyectos-->    
-        <section class="section__proyectos" id="proyectos"></section>
-        <!--seccion contacto-->
-        <section class="section__contacto" id="contacto"></section>
+        <section class="section__conocimientos" id="conocimientos">
+            <div class="conocimientos__texto">
+                <h2 class="conocimientos__texto__titulo"> Mis conocimientos</h2>
+                <p class="conocimientos__texto__parrafo">En esta sección, te enseño lo que he aprendido en este camino de la programación, mostrando cómo he crecido y ganado experiencia en distintas materias. </p>
+            </div>
+            <div class="conocimientos__cajas">
+                <div><!--icono + texto / caja 1-->
+                    <i class="fa-brands fa-html5"></i>
+                    <p class="conocimientos__html5">HTML 5</p>
+                </div>
+                <div><!--icono + texto / caja 2-->
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p class="conocimientos__css">css 3</p>
+                </div>
+            </div>
+        </section>
+        <!--seccion__cita-->
+        <section class="section__cita">
+            <span class="cita__comillas--grande">"</span><!--primer intento, probar  solo agrandar y poner background-->
+            <p class="cita__parrafo">Siempre parece imposible... hasta que se hace.</p>
+            <p class="cita__autor--grande">Nelson Mandela</p>
+
+        </section>
+        <!--seccion proyectos-->     <!--hacer las cajas--> 
+        <section class="section__proyectos" id="proyectos">
+            <h2> Mis proyectos</h2>
+            <a href="#hola"><img src="./imagenes/imagen presentacion.png" alt="Mujer con ordenador"><p>Portfolio</p></a>
+            <a href="#"><img src="./imagenes/generador de memes.png" alt="Mujer jugando con un globo"><p>Generado de memes</p></a>
+            <a href="#"><img src="./imagenes/match-3.png" alt="Mujer mirando varios dispositivos"><p>Match 3</p></a>
+            <a href="#"><img src="./imagenes/controlador de gastos.png" alt="Mujer mirando sus gastos"><p>Controlador de gastos</p></a>
+            <a href="#"><img src="./imagenes/administrador de reuniones.png" alt="Mujer con un calendario"><p>Administrador de reuniones</p></a>
+            <a href="#"><img src="./imagenes/todo-app.png" alt="Mujer con el telefono"><p>Todo App</p></a>
+            <a href="#"><img src="./imagenes/buscador de peliculas.png" alt="Mujer disfrazada de SuperWoman"><p>Buscador de películas</p></a>
+
+        </section>
+        <!--seccion contacto--> <!--agragar los enlaces--> 
+        <section class="section__contacto" id="contacto">
+            <div class="contacto__contactame">
+                <h2>Contáctame</h2>
+                <p>Aquí, no solo puedes explorar mis habilidades y proyectos, sino también establecer un enlace directo conmigo. Estoy ansiosa por conectarme contigo y colaborar en futuros proyectos emocionantes o responder a tus preguntas. ¡No dudes en hacerlo!💜</p>
+                <div class="contacto">
+                    <a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin"></i><span class="off">Gisella Ortiz de la Tabla</span></a>
+                    <a href="#"><i class="fa-solid fa-square-envelope"></i><span class="off">gisellanalia@gmail.com</span></a><!--falta mailto-->
+                    <a href="https://www.instagram.com/gis_en_galicia/"><i class="fa-brands fa-square-instagram"></i><span class="off">gis_en_galicia</span></a>
+                    <a href="https://github.com/GiseOt"><i class="fa-brands fa-github"></i><span class="off">GiseOt</span></a>
+                </div>
+                
+            </div>
+            <div class="contacto__escribime">
+            <!--agregar formulario--> 
+            </div>
+            
+            
+        </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer"> 
+        <nav class="footer__menu--simple">
+            <ul class="menu__navegacion">
+                <li><a href="#hola" class="menu__lista">Hola</a></li>
+                <li><a href="#conocimientos" class="menu__lista">Conocimientos</a></li>
+                <li><a href="#proyectos" class="menu__lista">Proyectos</a></li>
+                <li><a href="#contacto" class="menu__lista--color">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="footer__contacto--logo"></div><!--agregar enlace--> 
+        <a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin"></i><span class="off">Gisella Ortiz de la Tabla</span></a>
+        <a href="#"><i class="fa-solid fa-square-envelope"></i><span class="off">gisellanalia@gmail.com</span></a>
+		<a href="https://www.instagram.com/gis_en_galicia/"><i class="fa-brands fa-square-instagram"></i><span class="off">gis_en_galicia</span></a>
+    </div>
+    </footer>
 </body>
 </html>
