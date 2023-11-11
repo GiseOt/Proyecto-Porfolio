@@ -22,42 +22,63 @@
         <!--seccion hola-->
         <section class="section__presentacion" id="hola">
             <div class="presentacion__hola">
-                <h1>¡Hola! soy <span class="presentacion__nombre--color">Gisella</span></h1>
+                <p class="presentacion__nombre">¡Hola! soy</p>
+                <h1>Gisella Ortiz de la Tabla</h1>
                 <p class="presentacion__parrafo">Desarrolladora, amante de la naturaleza y fans de Friends.</span></p>
-                <a href="#proyectos" class="link__proyectos--color">Mira mis proyectos</a>
+                <a href="#proyectos" class="link__proyectos--color">lo que hago</a>
             </div>
             <div class="presentacion__imagen">
-                <img src="./imagenes/imagen presentacion.png" alt="Mujer con un ordenador">
+                <img src="./imagenes/imagen presentacion.png" alt="Mujer con un ordenador" class="img__presentacion">
             </div>
 
         </section>
         <!--seccion conocimientos-->
-        <section class="section__conocimientos" id="conocimientos">
+        <section class="section__conocimientos--color" id="conocimientos">
             <div class="conocimientos__texto">
-                <h2 class="conocimientos__texto__titulo"> Mis conocimientos</h2>
+                <h2> Mis conocimientos</h2>
                 <p class="conocimientos__texto__parrafo">En esta sección, te enseño lo que he aprendido en este camino de la programación, mostrando cómo he crecido y ganado experiencia en distintas materias. </p>
             </div>
             <div class="conocimientos__cajas">
-                <div><!--icono + texto / caja 1-->
+                <div class="conocimientos__icono__texto"><!--icono + texto / caja 1-->
                     <i class="fa-brands fa-html5"></i>
-                    <p class="conocimientos__html5">HTML 5</p>
+                    <p class="conocimientos__parrafo">HTML 5</p>
                 </div>
-                <div><!--icono + texto / caja 2-->
+                <div class="conocimientos__icono__texto" ><!--icono + texto / caja 2-->
                     <i class="fa-brands fa-css3-alt"></i>
-                    <p class="conocimientos__css">css 3</p>
+                    <p class="conocimientos__parrafo"> CSS 3</p>
+                </div>
+                <div class="conocimientos__icono__texto"><!--icono + texto / caja 3-->
+                    <i class="fa-brands fa-sass"></i>
+                    <p class="conocimientos__parrafo">Sass</p>
+                </div>
+                <div class="conocimientos__icono__texto"><!--icono + texto / caja 4-->
+                    <i class="fa-brands fa-js"></i>
+                    <p class="conocimientos__parrafo">JavaScript</p>
+                </div>
+                <div class="conocimientos__icono__texto" ><!--icono + texto / caja 5-->
+                    <i class="fa-brands fa-react"></i>
+                    <p class="conocimientos__parrafo">React</p>
+                </div>
+                <div class="conocimientos__icono__texto"><!--icono + texto / caja 6-->
+                    <i class="fa-brands fa-git-alt"></i>
+                    <p class="conocimientos__parrafo">GIT</p>
                 </div>
             </div>
         </section>
         <!--seccion__cita-->
         <section class="section__cita">
-            <span class="cita__comillas--grande">"</span><!--primer intento, probar  solo agrandar y poner background-->
+            <i class="fa-solid fa-quote-left"></i><!--segundo intento, probar  solo agrandar y poner background-->
             <p class="cita__parrafo">Siempre parece imposible... hasta que se hace.</p>
             <p class="cita__autor--grande">Nelson Mandela</p>
 
         </section>
         <!--seccion proyectos-->     <!--hacer las cajas--> 
         <section class="section__proyectos" id="proyectos">
-            <h2> Mis proyectos</h2>
+            <div class="sectio__proyectos">
+                <h2> Mis proyectos</h2>
+                <p>Como dice la frase más arriba...parece imposible hasta que se hace, por ello aquí muestro los frutos de mi creatividad en cada línea de código. ¡Espero que disfruten explorando estos proyectos tanto como yo disfruté creándolos!.</p>
+            </div>
+            <div class="proyectos__cajas">
             <a href="#hola"><img src="./imagenes/imagen presentacion.png" alt="Mujer con ordenador"><p>Portfolio</p></a>
             <a href="#"><img src="./imagenes/generador de memes.png" alt="Mujer jugando con un globo"><p>Generado de memes</p></a>
             <a href="#"><img src="./imagenes/match-3.png" alt="Mujer mirando varios dispositivos"><p>Match 3</p></a>
@@ -65,41 +86,95 @@
             <a href="#"><img src="./imagenes/administrador de reuniones.png" alt="Mujer con un calendario"><p>Administrador de reuniones</p></a>
             <a href="#"><img src="./imagenes/todo-app.png" alt="Mujer con el telefono"><p>Todo App</p></a>
             <a href="#"><img src="./imagenes/buscador de peliculas.png" alt="Mujer disfrazada de SuperWoman"><p>Buscador de películas</p></a>
-
+        </div>
         </section>
-        <!--seccion contacto--> <!--agragar los enlaces--> 
+        <!--seccion contacto--> <!--agregar los enlaces--> 
         <section class="section__contacto" id="contacto">
             <div class="contacto__contactame">
                 <h2>Contáctame</h2>
                 <p>Aquí, no solo puedes explorar mis habilidades y proyectos, sino también establecer un enlace directo conmigo. Estoy ansiosa por conectarme contigo y colaborar en futuros proyectos emocionantes o responder a tus preguntas. ¡No dudes en hacerlo!💜</p>
                 <div class="contacto">
-                    <a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin"></i><span class="off">Gisella Ortiz de la Tabla</span></a>
-                    <a href="#"><i class="fa-solid fa-square-envelope"></i><span class="off">gisellanalia@gmail.com</span></a><!--falta mailto-->
-                    <a href="https://www.instagram.com/gis_en_galicia/"><i class="fa-brands fa-square-instagram"></i><span class="off">gis_en_galicia</span></a>
-                    <a href="https://github.com/GiseOt"><i class="fa-brands fa-github"></i><span class="off">GiseOt</span></a>
+                    <ul class="contacto__lista">
+                        <li class="contacto__link--color"><a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin"></i>Gisella Ortiz de la Tabla</a></li>
+                        <li class="contacto__link--color"><a href="mailto:gisellanalia@gmail.com"><i class="fa-solid fa-square-envelope"></i>gisellanalia@gmail.com</a></li>
+                        <li class="contacto__link--color"><a href="https://www.instagram.com/gis_en_galicia/"><i class="fa-brands fa-square-instagram"></i>gis_en_galicia</a></li>
+                        <li class="contacto__link--color"><a href="https://github.com/GiseOt"><i class="fa-brands fa-github"></i>GiseOt</a></li>
+                    </ul>
                 </div>
                 
             </div>
-            <div class="contacto__escribime">
-            <!--agregar formulario--> 
-            </div>
-            
-            
+            <div class="contacto__escribime"><!--formulario-->
+                <form action="gracias.html"><!--falta crear archivo gracias.html-->
+                    <h2 class="formulario__titulo">¿Hablamos?</h2>
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+                        <div class="datos__personales">
+                            <div class="input__container">
+                                <label for="input__nombre">Nombre</label>
+                                <input
+                                    type="text"
+                                    placeholder="Tu nombre"
+                                    name="nombre"
+                                    class="form__input"
+                                    id="input__nombre"
+                                    required/>
+                            </div>
+                            <div class="input__container">
+                                <label for="input__apellido">Apellido</label>
+                                <input
+                                    type="text"
+                                    placeholder="Tu apellido"
+                                    name="apellido"
+                                    class="form__input"
+                                    id="input__apellido"
+                                    required/>
+                                
+                            </div>
+                            <div class="input__container">
+                                <label for="input__email">E-mail</label>
+                                <input
+                                    type="email"
+                                    placeholder="Tu e-mail"
+                                    name="email"
+                                    class="form__input"
+                                    id="input__email"
+                                    required />
+                            </div>
+                            <div class="input__container">
+                                <label for="input__telefono">Teléfono</label>
+                                <input
+                                    type="tel"
+                                    placeholder="Tu teléfono"
+                                    name="telefono"
+                                    class="form__input"
+                                    aria-label="telefono"
+                                    id="input__telefono"
+                                    required />
+                            </div>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Enviar" />
+                </form>
+                
         </section>
     </main>
-    <footer class="footer"> 
+    <footer> 
         <nav class="footer__menu--simple">
             <ul class="menu__navegacion">
                 <li><a href="#hola" class="menu__lista">Hola</a></li>
                 <li><a href="#conocimientos" class="menu__lista">Conocimientos</a></li>
                 <li><a href="#proyectos" class="menu__lista">Proyectos</a></li>
                 <li><a href="#contacto" class="menu__lista--color">Contacto</a></li>
+
             </ul>
         </nav>
-        <div class="footer__contacto--logo"></div><!--agregar enlace--> 
-        <a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin"></i><span class="off">Gisella Ortiz de la Tabla</span></a>
-        <a href="#"><i class="fa-solid fa-square-envelope"></i><span class="off">gisellanalia@gmail.com</span></a>
-		<a href="https://www.instagram.com/gis_en_galicia/"><i class="fa-brands fa-square-instagram"></i><span class="off">gis_en_galicia</span></a>
+        <div class="footer__contacto--logo"></div><!--lo reemplace por la lista --> 
+        <ul class="contacto__lista">
+            <li><a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin"></i>Gisella Ortiz de la Tabla</a></li>
+            <li><a href="mailto:gisellanalia@gmail.com"><i class="fa-solid fa-square-envelope"></i>gisellanalia@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/gis_en_galicia/"><i class="fa-brands fa-square-instagram"></i>gis_en_galicia</a></li>
+            <li><a href="https://github.com/GiseOt"><i class="fa-brands fa-github"></i>GiseOt</a></li>
+        </ul>
     </div>
     </footer>
 </body>

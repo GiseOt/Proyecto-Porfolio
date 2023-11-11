@@ -1,5 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Montserrat', sans-serif ;
+    font-size: 16px;
+} 
+body{
+    padding-inline: 20px;
 }
+
+header{
+    display: none;
+} /* usar para escritorio*/
+
+
+a{
+    text-decoration: none; 
+    color: black;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    padding-block: 40px;
+    gap: 40px;
+
+}
+/* SECCION HOLA */
+.section__presentacion{ 
+    text-align: center;
+    margin-top: 40px;
+    background-color: white;
+}
+
+/*hola soy*/
+.presentacion__nombre{
+    font-size: 20px;
+    font-weight: bolder;
+}
+/*Gisella*/
+h1{
+    color: rgb(190, 156, 221);
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.presentacion__parrafo{
+    margin-bottom: 45px;
+
+}
+
+/*link a proyectos*/
+.link__proyectos--color{
+    background-color:rgb(190, 156, 221) ;
+    color:white;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.link__proyectos--color:hover{
+    background-color:rgb(219, 196, 241);
+}
+
+img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*SECCION CONOCIMIENTOS*/
+.section__conocimientos--color{
+    background-color: rgb(245, 241, 237);
+    width: calc(100% + 40px);
+    margin-left: -20px;
+}
+
+.conocimientos__texto{
+    padding-inline: 20px;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    
+
+}  
+p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*padre de conocimientos__cajas*/
+.conocimientos__cajas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+/*hijos de conocimientos__cajas*/
+.conocimientos__cajas div{
+    background-color:white;
+    width: 40%;
+    display: flex;
+    border: 1px solid rgb(228, 226, 226);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    max-width: 150px;
+}
+
+.conocimientos__cajas div:hover{
+    border: 1px solid rgb(190, 156, 221);
+}
+
+/*estilos de los íconos*/
+.fa-brands{
+    font-size: 60px;
+}
+
+.fa-html5{
+    color: rgb(227, 76, 38);
+}
+
+.fa-css3-alt{
+    color: rgb(38, 77, 228 );
+}
+.fa-sass{
+    color: rgb(204, 102, 153)
+}
+.fa-js{
+    color: rgb(240, 219, 79);
+}
+.fa-react{
+    color: rgb(124, 197, 217);
+}
+.fa-git-alt{
+    color: rgb(243, 79, 41);
+}
+
+/*parrafo: titulo debajo del icono*/
+.conocimientos__parrafo {
+    margin-top: 5px;
+    font-weight: bolder;
+}
+
+/* SECCION CITAS*/
+.section__cita{
+    background-color:rgb(177, 94, 255);
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    text-align: center;
+    padding-inline: 20px;
+    color:white;
+}
+
+/*comilla span*/
+.fa-quote-left{
+    font-size:60px;
+}
+
+/*Nelson Mandela*/
+.cita__autor--grande{
+    font-size: 20px;
+}
+
+/*SECCION MIS PROYECTOS*/
+
+/*Cajas proyectos*/
+.proyectos__cajas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+/* Todos los enlaces de proyecto__caja*/
+.proyectos__cajas a{
+    border: 1px solid rgb(235, 157, 187);
+    border-radius: 5px;
+}
+
+.proyectos__cajas a:hover{
+    border: 2px solid rgb(190, 156, 221);
+    color: rgb(177, 94, 255); 
+}
+
+/* Todos los parrafos de proyecto__caja*/
+.proyectos__cajas p{
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+/*SECCION CONTACTO*/
+
+.section__contacto{
+    display: flex;
+    flex-direction: column;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+/*iconos de Contacto*/
+.contacto i{
+    color: rgb(177, 94, 255);
+    font-size:20px;
+    margin-top: 30px;
+    margin-right: 5px;
+}
+ul{
+    list-style-type: none;
+}
+
+.contacto__link--color :hover{
+    color: rgb(177, 94, 255);
+    border: 1px solid rgb(228, 226, 226);
+    padding: 5px;
+    border-radius: 10px;
+}
+/* FORMULARIO*/
+
+form {
+    width: 100%;
+    border: 2px solid  rgb(190, 156, 221);
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(245, 241, 237) ;
+}
+
+.formulario__titulo {
+    padding-bottom: 10px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+legend {
+    padding-inline: 3px;
+}
+
+.datos__personales {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px
+}
+
+.datos__personales .input__container {
+    padding-left: 3px;
+    font-size: 10px;
+}
+
+input[type="submit"] {
+    display: block;
+    padding: 2px 10px;
+    margin: 0 auto;
+    background-color:  rgb(190, 156, 221);
+    color: white;
+    border: 2px solid rgb(228, 226, 226);
+    border-radius: 10px;
+    font-weight: bolder;
+}
+/* FALTA FOOTER*/
