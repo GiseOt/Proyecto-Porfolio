@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Montserrat', sans-serif ;
-    font-size: 16px;
+    font-size: 1rem;
 } 
 body{
     padding-inline: 20px;
@@ -30,18 +30,19 @@ section{
 .section__presentacion{ 
     text-align: center;
     margin-top: 40px;
-    background-color: white;
 }
 
 /*hola soy*/
 .presentacion__nombre{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bolder;
 }
 /*Gisella*/
 h1{
+    font-size: 3.125rem;
+}
+.hola__nombre--color{
     color: rgb(190, 156, 221);
-    font-size: 50px;
     margin-bottom: 10px;
 }
 
@@ -66,6 +67,8 @@ h1{
 img{
     width: 100%;
     margin-top: 10px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
 
 /*SECCION CONOCIMIENTOS*/
@@ -81,7 +84,7 @@ img{
 }
 
 h2{
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-bottom: 15px;
     text-align: center;
     
@@ -120,8 +123,8 @@ p{
 }
 
 /*estilos de los íconos*/
-.fa-brands{
-    font-size: 60px;
+.fa-brands , .fa-solid{
+    font-size: 3.75rem;
 }
 
 .fa-html5{
@@ -160,14 +163,14 @@ p{
     color:white;
 }
 
-/*comilla span*/
+/*comilla icono*/
 .fa-quote-left{
-    font-size:60px;
+    font-size: 3.75rem;
 }
 
 /*Nelson Mandela*/
 .cita__autor--grande{
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /*SECCION MIS PROYECTOS*/
@@ -180,19 +183,24 @@ p{
 }
 
 /* Todos los enlaces de proyecto__caja*/
-.proyectos__cajas a{
+.cajas__imagenes{
     border: 1px solid rgb(235, 157, 187);
     border-radius: 5px;
 }
 
-.proyectos__cajas a:hover{
+.cajas__imagenes:hover{
     border: 2px solid rgb(190, 156, 221);
     color: rgb(177, 94, 255); 
 }
 
+.cajas__imagenes a:hover{
+color: rgb(177, 94, 255); 
+}
+
+
 /* Todos los parrafos de proyecto__caja*/
 .proyectos__cajas p{
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     font-weight: bolder;
 }
 
@@ -202,64 +210,90 @@ p{
     display: flex;
     flex-direction: column;
 }
+
 .contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
 }
+
 /*iconos de Contacto*/
 .contacto i{
     color: rgb(177, 94, 255);
-    font-size:20px;
+    font-size: 1.25rem;
     margin-top: 30px;
     margin-right: 5px;
 }
+
 ul{
     list-style-type: none;
 }
 
-.contacto__link--color :hover{
-    color: rgb(177, 94, 255);
-    border: 1px solid rgb(228, 226, 226);
-    padding: 5px;
-    border-radius: 10px;
+.contacto__link--color{
+    width: 100%;
 }
+
+.contacto__link--color :hover{
+    color:  rgb(235, 157, 187);
+    border: 1px solid rgb(228, 226, 226);
+}
+
 /* FORMULARIO*/
 
 form {
     width: 100%;
-    border: 2px solid  rgb(190, 156, 221);
-    border-radius: 10px;
-    padding: 15px;
-    background-color: rgb(245, 241, 237) ;
 }
 
+/* Nombre y Apellido en Mobile es column y en Desktop es row -hijo 1*/
+.input__container--row{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Se mantiene en column - hijo 2*/
+.input__container--column{
+    display: flex;
+    flex-direction: column;
+}
+
+/*¿hablamos?*/
 .formulario__titulo {
     padding-bottom: 10px;
 }
 
+/*Recuadro de mi formulario*/
 fieldset {
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 15px;
 }
 
+/*Texto "Datos de Contacto"*/
 legend {
     padding-inline: 3px;
 }
 
-.datos__personales {
+label{
+    padding-bottom: 5px;
+
+}
+
+/*Mi Div padre Formulario*/
+.datos__contactame {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    gap: 10px
+    gap: 10px;
+
 }
 
-.datos__personales .input__container {
-    padding-left: 3px;
-    font-size: 10px;
+input , textarea{
+    border: 1px ;
+    border-radius:5px;
+    background-color: rgb(245, 241, 237) ;
+    padding: 2px;
 }
 
+/*Enviar*/
 input[type="submit"] {
     display: block;
     padding: 2px 10px;
@@ -270,4 +304,46 @@ input[type="submit"] {
     border-radius: 10px;
     font-weight: bolder;
 }
-/* FALTA FOOTER*/
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    background-color:rgb(190, 156, 221);
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding-block: 60px;
+}
+
+/*Lista que aparece en Desktop*/
+.footer__menu--simple{
+    display: none;
+}
+
+/*lista oculta de menu--simple*/
+.footer__navegacion{
+    display: flex;
+}  
+
+.footer__lista--simple{
+    font-size: 0.75rem;
+    margin-left: 10px;
+}
+
+/* iconos link*/
+.footer__lista{
+    display: flex;
+}
+
+.footer__lista i{
+    font-size: 2.5rem;
+    color:white;
+    margin-left: 15px;
+    
+}
+
+.footer__lista i:hover{
+    color:rgb(177, 94, 255);
+}

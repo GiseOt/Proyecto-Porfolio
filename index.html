@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css"><script src="https://kit.fontawesome.com/04baa38fa8.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Proyecto Portfolio</title>
 </head>
 <body>
@@ -23,7 +22,8 @@
         <section class="section__presentacion" id="hola">
             <div class="presentacion__hola">
                 <p class="presentacion__nombre">¡Hola! soy</p>
-                <h1>Gisella Ortiz de la Tabla</h1>
+                <h1 class="hola__nombre--color">Gisella </h1>
+                <h2 class="hola__nombre--color">Ortiz de la Tabla</h2>
                 <p class="presentacion__parrafo">Desarrolladora, amante de la naturaleza y fans de Friends.</span></p>
                 <a href="#proyectos" class="link__proyectos--color">lo que hago</a>
             </div>
@@ -67,28 +67,41 @@
         </section>
         <!--seccion__cita-->
         <section class="section__cita">
-            <i class="fa-solid fa-quote-left"></i><!--segundo intento, probar  solo agrandar y poner background-->
+            <i class="fa-solid fa-quote-left"></i>
             <p class="cita__parrafo">Siempre parece imposible... hasta que se hace.</p>
             <p class="cita__autor--grande">Nelson Mandela</p>
 
         </section>
-        <!--seccion proyectos-->     <!--hacer las cajas--> 
-        <section class="section__proyectos" id="proyectos">
+        <!--seccion proyectos--> 
             <div class="sectio__proyectos">
                 <h2> Mis proyectos</h2>
                 <p>Como dice la frase más arriba...parece imposible hasta que se hace, por ello aquí muestro los frutos de mi creatividad en cada línea de código. ¡Espero que disfruten explorando estos proyectos tanto como yo disfruté creándolos!.</p>
             </div>
             <div class="proyectos__cajas">
-            <a href="#hola"><img src="./imagenes/imagen presentacion.png" alt="Mujer con ordenador"><p>Portfolio</p></a>
-            <a href="#"><img src="./imagenes/generador de memes.png" alt="Mujer jugando con un globo"><p>Generado de memes</p></a>
-            <a href="#"><img src="./imagenes/match-3.png" alt="Mujer mirando varios dispositivos"><p>Match 3</p></a>
-            <a href="#"><img src="./imagenes/controlador de gastos.png" alt="Mujer mirando sus gastos"><p>Controlador de gastos</p></a>
-            <a href="#"><img src="./imagenes/administrador de reuniones.png" alt="Mujer con un calendario"><p>Administrador de reuniones</p></a>
-            <a href="#"><img src="./imagenes/todo-app.png" alt="Mujer con el telefono"><p>Todo App</p></a>
-            <a href="#"><img src="./imagenes/buscador de peliculas.png" alt="Mujer disfrazada de SuperWoman"><p>Buscador de películas</p></a>
-        </div>
+                <div class="cajas__imagenes">
+                    <a href="#hola"><img src="./imagenes/imagen presentacion.png" alt="Mujer con ordenador"><p>Portfolio</p></a>
+                </div>
+                <div class="cajas__imagenes">
+                    <a href="#"><img src="./imagenes/generador de memes.png" alt="Mujer jugando con un globo"><p>Generador de memes</p></a>
+                </div>  
+                <div class="cajas__imagenes">
+                    <a href="#"><img src="./imagenes/match-3.png" alt="Mujer mirando varios dispositivos"><p>Match 3</p></a>
+                </div> 
+                <div class="cajas__imagenes">
+                    <a href="#"><img src="./imagenes/controlador de gastos.png" alt="Mujer mirando sus gastos"><p>Controlador de gastos</p></a>
+                </div>  
+                <div class="cajas__imagenes">
+                    <a href="#"><img src="./imagenes/administrador de reuniones.png" alt="Mujer con un calendario"><p>Administrador de reuniones</p></a>
+                </div>
+                <div class="cajas__imagenes">
+                    <a href="#"><img src="./imagenes/todo-app.png" alt="Mujer con el telefono"><p>Todo App</p></a>
+                </div>
+                <div class="cajas__imagenes">  
+                    <a href="#"><img src="./imagenes/buscador de peliculas.png" alt="Mujer disfrazada de SuperWoman"><p>Buscador de películas</p></a>
+                </div>
+            </div>
         </section>
-        <!--seccion contacto--> <!--agregar los enlaces--> 
+        <!--seccion contacto-->
         <section class="section__contacto" id="contacto">
             <div class="contacto__contactame">
                 <h2>Contáctame</h2>
@@ -108,8 +121,8 @@
                     <h2 class="formulario__titulo">¿Hablamos?</h2>
                     <fieldset>
                         <legend>Datos de contacto</legend>
-                        <div class="datos__personales">
-                            <div class="input__container">
+                        <div class="datos__contactame">
+                            <div class="input__container--row">
                                 <label for="input__nombre">Nombre</label>
                                 <input
                                     type="text"
@@ -118,8 +131,6 @@
                                     class="form__input"
                                     id="input__nombre"
                                     required/>
-                            </div>
-                            <div class="input__container">
                                 <label for="input__apellido">Apellido</label>
                                 <input
                                     type="text"
@@ -128,9 +139,8 @@
                                     class="form__input"
                                     id="input__apellido"
                                     required/>
-                                
                             </div>
-                            <div class="input__container">
+                            <div class="input__container--column">
                                 <label for="input__email">E-mail</label>
                                 <input
                                     type="email"
@@ -140,7 +150,7 @@
                                     id="input__email"
                                     required />
                             </div>
-                            <div class="input__container">
+                            <div class="input__container--colum">
                                 <label for="input__telefono">Teléfono</label>
                                 <input
                                     type="tel"
@@ -151,31 +161,41 @@
                                     id="input__telefono"
                                     required />
                             </div>
-                        </div>
+                            <div class="input__container--column">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea
+                                    placeholder="Escribime tu mensaje"
+                                    name="mensaje"
+                                    class="form__textarea"
+                                    required></textarea>                        
+                            </div>
+                            </div>
                     </fieldset>
                     <input type="submit" value="Enviar" />
                 </form>
-                
+            </div>
         </section>
     </main>
     <footer> 
         <nav class="footer__menu--simple">
-            <ul class="menu__navegacion">
-                <li><a href="#hola" class="menu__lista">Hola</a></li>
-                <li><a href="#conocimientos" class="menu__lista">Conocimientos</a></li>
-                <li><a href="#proyectos" class="menu__lista">Proyectos</a></li>
-                <li><a href="#contacto" class="menu__lista--color">Contacto</a></li>
+            <ul class="footer__navegacion">
+                <li><a href="#hola" class="footer__lista--simple">Hola</a></li>
+                <li><a href="#conocimientos" class="footer__lista--simple">Conocimientos</a></li>
+                <li><a href="#proyectos" class="footer__lista--simple">Proyectos</a></li>
+                <li><a href="#contacto" class="footer__lista--simple">Contacto</a></li>
 
             </ul>
         </nav>
         <div class="footer__contacto--logo"></div><!--lo reemplace por la lista --> 
-        <ul class="contacto__lista">
-            <li><a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin"></i>Gisella Ortiz de la Tabla</a></li>
-            <li><a href="mailto:gisellanalia@gmail.com"><i class="fa-solid fa-square-envelope"></i>gisellanalia@gmail.com</a></li>
-            <li><a href="https://www.instagram.com/gis_en_galicia/"><i class="fa-brands fa-square-instagram"></i>gis_en_galicia</a></li>
-            <li><a href="https://github.com/GiseOt"><i class="fa-brands fa-github"></i>GiseOt</a></li>
+        <ul class="footer__lista">
+            <li class="footer__link"><a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="footer__link"><a href="mailto:gisellanalia@gmail.com"><i class="fa-solid fa-square-envelope"></i></a></li>
+            <li class="footer__link"><a href="https://www.instagram.com/gis_en_galicia/"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li class="footer__link" ><a href="https://github.com/GiseOt"><i class="fa-brands fa-github"></i></a></li>
         </ul>
     </div>
     </footer>
+    <script src="https://kit.fontawesome.com/04baa38fa8.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
