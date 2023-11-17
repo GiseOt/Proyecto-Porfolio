@@ -9,30 +9,66 @@
 body{
     padding-inline: 20px;
 }
-@media (mind-width:970px){
-    body {
-        height: 100vh;
-        padding-inline: 5px;
-    }
+
+/* MEDIA QUERY DESKTOP*/
+@media (mind-width:970px){ 
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
 }
 /*----header-----*/
 header{
     display: none;
 } 
+/* MEDIA QUERY DESKTOP ---header*/
 @media (min-width: 970px) {
-    header {
-        display: flex;
-        justify-content: center;
+header {
+    display: flex;
+    justify-content: center;
     }
-    /*-----VOLVER A REVISARRRR
-    .menu{
-    background-color: rgb(190, 156, 221);
-    position: fixed;
-    top:0;
-    width: 100vw;
-    }-----------------------*/
 
+/*---nav-----*/
+.menu{
+    background-color:rgb(190, 156, 221);
+    position: fixed;
+    top: 0;
+    width: 100%;  
+    }
+
+/* Mi lista UL*/
+.menu__navegacion {
+    display: flex;
+    justify-content: center;
+    padding-block: 30px;
+    }
+
+/*Lista LI*/
+.menu__lista {
+    margin: 0 20px; /* separación entre listitas*/
+    }
+.menu__navegacion a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding:10px;
+    border-radius: 15px;
+    }
+
+.menu__navegacion a:hover{
+    color:rgb(177, 94, 255);
+    
+    }
+.menu__navegacion a:focus{
+    background-color: rgba(255, 255, 255, 0.6); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    outline: 0;
+    } 
 }
+/*----fin media query----*/
+
+
 a{
     text-decoration: none; 
     color:black;
@@ -44,11 +80,28 @@ section{
     gap: 40px;
 
 }
+
 /*----------------- SECCION HOLA ------------------------------*/
+
 .section__presentacion{ 
     text-align: center;
     margin-top: 40px;
 }
+
+/* MEDIA QUERY DESKTOP -- seccion hola*/
+@media (min-width: 970px){
+.section__presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+}
+.presentacion__imagen{
+    max-width: 700px;
+}
+}
+/*---fin media query---*/
 
 /*hola soy*/
 .presentacion__nombre{
@@ -57,10 +110,23 @@ section{
     padding-bottom: 10px;
 }
 
+@media (min-width: 970px){
+.presentacion__nombre{
+    font-size: 2.5rem;
+    }
+}
+
 /*---Gisella---*/
 h1{
     font-size: 3.125rem;
 }
+
+@media (min-width: 970px){
+h1{
+    font-size: 3.5rem;
+    }
+}
+
 .hola__nombre--color{
     color: rgb(190, 156, 221);
     margin-bottom: 10px;
