@@ -24,13 +24,12 @@
                 <p class="presentacion__nombre">¡Hola! soy</p>
                 <h1 class="hola__nombre--color">Gisella </h1>
                 <h2 class="hola__nombre--color">Ortiz de la Tabla</h2>
-                <p class="presentacion__parrafo">Desarrolladora, amante de la naturaleza y fans de Friends.</span></p>
+                <p class="presentacion__parrafo">Desarrolladora Fronted, amante de la naturaleza y fans de Friends.</span></p>
                 <a href="#proyectos" class="link__proyectos--color">lo que hago</a>
             </div>
             <div class="presentacion__imagen">
                 <img src="./imagenes/imagen presentacion.png" alt="Mujer con un ordenador" class="img__presentacion">
             </div>
-
         </section>
         <!--seccion conocimientos-->
         <section class="section__conocimientos--color" id="conocimientos">
@@ -72,8 +71,9 @@
             <p class="cita__autor--grande">Nelson Mandela</p>
 
         </section>
-        <!--seccion proyectos--> 
-            <div class="sectio__proyectos">
+        <!--seccion proyectos-->
+        <section class="section__proyectos" id="proyectos">
+            <div class="section__proyectos__texto">
                 <h2> Mis proyectos</h2>
                 <p>Como dice la frase más arriba...parece imposible hasta que se hace, por ello aquí muestro los frutos de mi creatividad en cada línea de código. ¡Espero que disfruten explorando estos proyectos tanto como yo disfruté creándolos!.</p>
             </div>
@@ -108,10 +108,10 @@
                 <p>Aquí, no solo puedes explorar mis habilidades y proyectos, sino también establecer un enlace directo conmigo. Estoy ansiosa por conectarme contigo y colaborar en futuros proyectos emocionantes o responder a tus preguntas. ¡No dudes en hacerlo!💜</p>
                 <div class="contacto">
                     <ul class="contacto__lista">
-                        <li class="contacto__link--color"><a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin"></i>Gisella Ortiz de la Tabla</a></li>
-                        <li class="contacto__link--color"><a href="mailto:gisellanalia@gmail.com"><i class="fa-solid fa-square-envelope"></i>gisellanalia@gmail.com</a></li>
-                        <li class="contacto__link--color"><a href="https://www.instagram.com/gis_en_galicia/"><i class="fa-brands fa-square-instagram"></i>gis_en_galicia</a></li>
-                        <li class="contacto__link--color"><a href="https://github.com/GiseOt"><i class="fa-brands fa-github"></i>GiseOt</a></li>
+                        <li class="contacto__link--color"><a class="prueba" href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin-in"></i>Gisella Ortiz de la Tabla</a></li>
+                        <li class="contacto__link--color"><a href="mailto:gisellanalia@gmail.com"><i class="fa-regular fa-envelope"></i>gisellanalia@gmail.com</a></li>
+                        <li class="contacto__link--color"><a href="https://twitter.com/gisella_ot"><i class="fa-brands fa-twitter"></i>@gisella_ot</a></li>
+                        <li class="contacto__link--color"><a href="https://github.com/GiseOt"><i class="fa-brands fa-github-alt"></i>GiseOt</a></li>
                     </ul>
                 </div>
                 
@@ -129,6 +129,7 @@
                                     placeholder="Tu nombre"
                                     name="nombre"
                                     class="form__input"
+                                    aria-label="nombre" 
                                     id="input__nombre"
                                     required/>
                                 <label for="input__apellido">Apellido</label>
@@ -137,6 +138,7 @@
                                     placeholder="Tu apellido"
                                     name="apellido"
                                     class="form__input"
+                                    aria-label="apellido" 
                                     id="input__apellido"
                                     required/>
                             </div>
@@ -147,24 +149,25 @@
                                     placeholder="Tu e-mail"
                                     name="email"
                                     class="form__input"
+                                    aria-label="e-mail" 
                                     id="input__email"
                                     required />
                             </div>
-                            <div class="input__container--colum">
+                            <div class="input__container--column">
                                 <label for="input__telefono">Teléfono</label>
                                 <input
                                     type="tel"
                                     placeholder="Tu teléfono"
                                     name="telefono"
                                     class="form__input"
-                                    aria-label="telefono"
+                                    aria-label="telefono" 
                                     id="input__telefono"
                                     required />
                             </div>
                             <div class="input__container--column">
-                                <label for="mensaje">Mensaje</label>
+                                <label for="mensaje">Mensaje</label> 
                                 <textarea
-                                    placeholder="Escribime tu mensaje"
+                                    placeholder="Escribe tu mensaje"
                                     name="mensaje"
                                     class="form__textarea"
                                     required></textarea>                        
@@ -188,11 +191,12 @@
         </nav>
         <div class="footer__contacto--logo"></div><!--lo reemplace por la lista --> 
         <ul class="footer__lista">
-            <li class="footer__link"><a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li class="footer__link"><a href="mailto:gisellanalia@gmail.com"><i class="fa-solid fa-square-envelope"></i></a></li>
-            <li class="footer__link"><a href="https://www.instagram.com/gis_en_galicia/"><i class="fa-brands fa-square-instagram"></i></a></li>
-            <li class="footer__link" ><a href="https://github.com/GiseOt"><i class="fa-brands fa-github"></i></a></li>
+            <li class="footer__link"><a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="footer__link"><a href="mailto:gisellanalia@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+            <li class="footer__link"><a href="https://twitter.com/gisella_ot"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="footer__link" ><a href="https://github.com/GiseOt"><i class="fa-brands fa-github-alt"></i></a></li>
         </ul>
+        <p class="footer__parrafo">Hecho con 💜 por Gisella</p>
     </div>
     </footer>
     <script src="https://kit.fontawesome.com/04baa38fa8.js" crossorigin="anonymous"></script>

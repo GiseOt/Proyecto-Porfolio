@@ -9,15 +9,33 @@
 body{
     padding-inline: 20px;
 }
-
+@media (mind-width:970px){
+    body {
+        height: 100vh;
+        padding-inline: 5px;
+    }
+}
+/*----header-----*/
 header{
     display: none;
-} /* usar para escritorio*/
+} 
+@media (min-width: 970px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    /*-----VOLVER A REVISARRRR
+    .menu{
+    background-color: rgb(190, 156, 221);
+    position: fixed;
+    top:0;
+    width: 100vw;
+    }-----------------------*/
 
-
+}
 a{
     text-decoration: none; 
-    color: black;
+    color:black;
 }
 section{
     display: flex;
@@ -26,7 +44,7 @@ section{
     gap: 40px;
 
 }
-/* SECCION HOLA */
+/*----------------- SECCION HOLA ------------------------------*/
 .section__presentacion{ 
     text-align: center;
     margin-top: 40px;
@@ -36,8 +54,10 @@ section{
 .presentacion__nombre{
     font-size: 1.25rem;
     font-weight: bolder;
+    padding-bottom: 10px;
 }
-/*Gisella*/
+
+/*---Gisella---*/
 h1{
     font-size: 3.125rem;
 }
@@ -48,7 +68,6 @@ h1{
 
 .presentacion__parrafo{
     margin-bottom: 45px;
-
 }
 
 /*link a proyectos*/
@@ -58,6 +77,8 @@ h1{
     text-transform: uppercase;
     padding: 15px 20px;
     border-radius: 20px;
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 
 .link__proyectos--color:hover{
@@ -71,7 +92,7 @@ img{
     object-fit: contain;
 }
 
-/*SECCION CONOCIMIENTOS*/
+/*-----------SECCION CONOCIMIENTOS-----------------------------------*/
 .section__conocimientos--color{
     background-color: rgb(245, 241, 237);
     width: calc(100% + 40px);
@@ -87,9 +108,8 @@ h2{
     font-size: 1.875rem;
     margin-bottom: 15px;
     text-align: center;
-    
-
 }  
+
 p{
     text-align: center;
     margin-top: 20px;
@@ -100,7 +120,6 @@ p{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
 }
 
 /*hijos de conocimientos__cajas*/
@@ -122,8 +141,8 @@ p{
     border: 1px solid rgb(190, 156, 221);
 }
 
-/*estilos de los íconos*/
-.fa-brands , .fa-solid{
+/*---estilos de los íconos------*/
+.conocimientos__cajas .fa-brands , .fa-solid{
     font-size: 3.75rem;
 }
 
@@ -134,15 +153,19 @@ p{
 .fa-css3-alt{
     color: rgb(38, 77, 228 );
 }
+
 .fa-sass{
     color: rgb(204, 102, 153)
 }
+
 .fa-js{
     color: rgb(240, 219, 79);
 }
+
 .fa-react{
     color: rgb(124, 197, 217);
 }
+
 .fa-git-alt{
     color: rgb(243, 79, 41);
 }
@@ -153,7 +176,7 @@ p{
     font-weight: bolder;
 }
 
-/* SECCION CITAS*/
+/*--------------- SECCION CITAS------------------------------------*/
 .section__cita{
     background-color:rgb(177, 94, 255);
     width: calc(100% + 40px);
@@ -161,6 +184,7 @@ p{
     text-align: center;
     padding-inline: 20px;
     color:white;
+    text-transform: uppercase;
 }
 
 /*comilla icono*/
@@ -173,7 +197,7 @@ p{
     font-size: 1.25rem;
 }
 
-/*SECCION MIS PROYECTOS*/
+/*-------------SECCION MIS PROYECTOS-----------------------------------*/
 
 /*Cajas proyectos*/
 .proyectos__cajas{
@@ -197,14 +221,13 @@ p{
 color: rgb(177, 94, 255); 
 }
 
-
 /* Todos los parrafos de proyecto__caja*/
 .proyectos__cajas p{
     padding-bottom: 30px;
     font-weight: bolder;
 }
 
-/*SECCION CONTACTO*/
+/*--------SECCION CONTACTO---------------------------------------------------*/
 
 .section__contacto{
     display: flex;
@@ -219,27 +242,40 @@ color: rgb(177, 94, 255);
 }
 
 /*iconos de Contacto*/
-.contacto i{
+.contacto i {
     color: rgb(177, 94, 255);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-top: 30px;
-    margin-right: 5px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 50%; 
+    padding:10px;
 }
 
+/*Lista de contacto*/
 ul{
     list-style-type: none;
 }
 
-.contacto__link--color{
-    width: 100%;
+.contacto__link--color a{
+    color: rgb(177, 94, 255);
 }
 
-.contacto__link--color :hover{
-    color:  rgb(235, 157, 187);
-    border: 1px solid rgb(228, 226, 226);
+/* enlace + icono*/
+
+.contacto__link--color:hover a,
+.contacto__link--color:hover i {
+    color: rgb(224, 55, 120); 
 }
 
-/* FORMULARIO*/
+.contacto__link--color:hover i {
+    color: rgb(224, 55, 120);
+    background-color: rgba(196, 28, 93, 0.1);
+    border-radius: 50%; 
+    padding:10px;
+}
+
+/*--------- FORMULARIO-----------*/
 
 form {
     width: 100%;
@@ -293,19 +329,31 @@ input , textarea{
     padding: 2px;
 }
 
+input , textarea::placeholder{
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+    padding-top: 5px;
+}
+
 /*Enviar*/
 input[type="submit"] {
     display: block;
-    padding: 2px 10px;
-    margin: 0 auto;
+    padding: 10px 20px;
+    margin: 0 5px;/* 0 auto para centar*/
     background-color:  rgb(190, 156, 221);
     color: white;
     border: 2px solid rgb(228, 226, 226);
-    border-radius: 10px;
+    border-radius: 20px;
     font-weight: bolder;
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 
-/*FOOTER*/
+input[type="submit"]:hover{
+    background-color:rgb(219, 196, 241);
+}
+
+/*-------------FOOTER-------------------------------------*/
 
 footer{
     display: flex;
@@ -338,12 +386,18 @@ footer{
 }
 
 .footer__lista i{
-    font-size: 2.5rem;
-    color:white;
-    margin-left: 15px;
-    
+    font-size: 1.5rem;
+    color: rgb(177, 94, 255);
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%; 
+    padding:10px;
 }
 
 .footer__lista i:hover{
-    color:rgb(177, 94, 255);
+    color:rgb(190, 156, 221);
+}
+
+.footer__parrafo{
+    color: white;
 }
