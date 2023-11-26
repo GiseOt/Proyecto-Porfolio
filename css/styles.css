@@ -51,6 +51,7 @@ header {
 .menu__lista {
     margin: 0 20px; /* separación entre listitas*/
     }
+
 .menu__navegacion a{
     color: white;
     text-transform: uppercase;
@@ -63,6 +64,7 @@ header {
     color:rgb(177, 94, 255);
     
     }
+
 .menu__navegacion a:focus{
     background-color: rgba(255, 255, 255, 0.6); 
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
@@ -88,6 +90,7 @@ section{
     section{
         margin-top: 90px;
         scroll-margin-top: 80px;
+        padding-block: 100px;
     }
 }
 /*----------------- SECCION HOLA ------------------------------*/
@@ -105,6 +108,7 @@ section{
     align-items: center;
     padding: 200px;
 }
+
 .presentacion__imagen{
     max-width: 700px;
 }
@@ -128,13 +132,13 @@ section{
 /*---Gisella---*/
 h1{
     font-size: 3.125rem;
+    text-shadow: 3px 3px 1px rgba(177,94,255,0.32);
 }
 
 /* MEDIA QUERY DESKTOP -- h1--*/
 @media (min-width: 970px){
 h1{
     font-size: 3.5rem;
-    text-shadow: 4px 4px 2px rgba(177,94,255,0.32);
     }
 }
 
@@ -184,7 +188,7 @@ img{
     flex-direction: column;
     justify-content: center;*/
     align-items: center;
-}
+    }
 }
 
 .conocimientos__texto{
@@ -196,17 +200,17 @@ h2{
     font-size: 1.875rem;
     margin-bottom: 15px;
     text-align: center;
-    text-shadow: 4px 4px 2px rgba(177,94,255,0.32);
+    text-shadow: 3px 3px 1px rgba(177,94,255,0.32);
 
-}  
+} 
+
 /* MEDIA QUERY DESKTOP --todos los h2---*/
 @media (min-width: 970px){
     h2{
         font-size: 2.5rem;
         padding-bottom: 10px;
-
-        }
     }
+}
 
 p{
     text-align: center;
@@ -225,7 +229,8 @@ p{
     justify-content: center;
     align-items: center;
     height: 580px;
-    width: 990px;
+    max-width: 990px;
+    margin-top: auto;
     }
 }
 
@@ -249,9 +254,8 @@ p{
     max-width: 275px;
     flex-wrap: wrap;
     }
-
-
 }
+
 .conocimientos__cajas div:hover{
     border: 1px solid rgb(190, 156, 221);
 }
@@ -291,8 +295,8 @@ p{
     font-weight: bolder;
 }
 
-
 /*--------------- SECCION CITAS------------------------------------*/
+
 .section__cita{
     background-color:rgb(177, 94, 255);
     width: calc(100% + 40px);
@@ -304,14 +308,12 @@ p{
 }
 
 /* MEDIA QUERY DESKTOP -- presentacion__nombre--*/
-
 @media (min-width: 970px){
 .section__cita{
     padding-inline: 75px;
     margin-top: 0;
+    }
 }
-}
-
 
 /*comilla icono*/
 .fa-quote-left{
@@ -328,10 +330,9 @@ p{
 /* MEDIA QUERY DESKTOP -- seccion proyectos. centrar las cajas--*/
 @media (min-width: 970px){
 .section__proyectos{
-    width: 80%;
     align-items: center;
     margin: auto;
-}
+    }
 }
 
 /* Todos los enlaces de proyecto__caja*/
@@ -349,6 +350,13 @@ p{
 color: rgb(177, 94, 255); 
 }
 
+/*Cajas proyectos*/
+.proyectos__cajas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
 /* Todos los parrafos de proyecto__caja*/
 .proyectos__cajas p{
     padding-bottom: 30px;
@@ -356,28 +364,31 @@ color: rgb(177, 94, 255);
 }
 
 /* MEDIA QUERY DESKTOP -- proyecto__cajas--*/
-@media (min-width: 970px){
+@media (min-width: 970px ){
     .proyectos__cajas{
         /*background-color: rgb(226, 171, 43);*/
-        max-height: 1000px;
-        width:80%;
+        max-width: 1100px;
         margin: auto;
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
         align-items: center;
         gap: 25px;
-        padding-inline: 60px;
-}
+        padding-inline: 15px;
+    }
+
+    .section__proyectos__texto p {
+        padding-inline: 95px;
+    }
 }
 
 /* MEDIA QUERY DESKTOP -- caja__imagenes--*/
 @media (min-width: 970px){
     .cajas__imagenes{
-    /* max-height: 290px;*/
+    max-height: 290px;
     width: 330px;
     /*background-color: rgb(60, 132, 194);*/
-}
+    }
 }
 
 /*--------SECCION CONTACTO---------------------------------------------------*/
@@ -386,6 +397,15 @@ color: rgb(177, 94, 255);
     display: flex;
     flex-direction: column;
 }
+/* MEDIA QUERY DESKTOP -- .section__contacto / div padre --*/
+@media (min-width: 970px){
+.section__contacto{
+    flex-direction: row;
+    margin: auto;
+    border-radius: 5px;
+    padding-inline: 100px;
+    }
+}
 
 .contacto {
     display: flex;
@@ -393,6 +413,21 @@ color: rgb(177, 94, 255);
     align-items: center;
     margin-top: 20px;
 }
+
+/* MEDIA QUERY DESKTOP -- .contacto__contactame / lista completa --*/
+@media (min-width: 970px){
+    .contacto__contactame{
+        width: 50%;
+        max-width: 1110px;
+        margin: auto;
+        }
+
+        .contacto__contactame p{
+            text-align: justify;
+        }
+    }
+
+
 
 /*iconos de Contacto*/
 .contacto i {
@@ -415,7 +450,6 @@ ul{
 }
 
 /* enlace + icono*/
-
 .contacto__link--color:hover a,
 .contacto__link--color:hover i {
     color: rgb(224, 55, 120); 
@@ -434,10 +468,59 @@ form {
     width: 100%;
 }
 
+/*Formulario Valid /Invalid*/
+input:valid:focus,
+textarea:valid:focus {
+    box-shadow: 0px 0px 5px #88c459;
+}
+
+input:invalid:not(:placeholder-shown):focus,
+textarea:invalid:not(:placeholder-shown):focus {
+    box-shadow: 0px 0px 5px #f5414f;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+    border: 1px solid #f5414f;
+}
+
+input:valid,
+textarea:valid {
+    border: 1px solid #88c459;
+}
+
+/* MEDIA QUERY DESKTOP -- div padre --*/
+@media (min-width: 970px){
+    .contacto__escribime {
+        width: 50%;
+        max-width: 1110px;
+        margin:  0 auto ;
+        }
+}
+
 /* Nombre y Apellido en Mobile es column y en Desktop es row -hijo 1*/
 .input__container--row{
     display: flex;
     flex-direction: column;
+}
+
+/* MEDIA QUERY DESKTOP -- Nombre y Apellido en Desktop es row -hijo 1--*/
+@media (min-width: 970px){
+    .input__container--row{
+        flex-direction: row;
+        align-items: baseline;
+        
+    }
+
+    .input__container--row input{
+        margin-left: 5px;
+        box-sizing: border-box;
+        width: 50%;
+    }
+
+    label[for="input__apellido"]{
+        margin-left: 5px;
+    }
 }
 
 /*Se mantiene en column - hijo 2*/
@@ -463,7 +546,8 @@ legend {
 }
 
 label{
-    padding-bottom: 5px;
+    margin-block: 8px;
+    /* font-weight: bolder;*/
 
 }
 
@@ -471,9 +555,9 @@ label{
 .datos__contactame {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 
 }
+
 
 input , textarea{
     border: 1px ;
@@ -485,18 +569,21 @@ input , textarea{
 input , textarea::placeholder{
     font-size: 15px;
     font-family: Helvetica, sans-serif;
-    padding-top: 5px;
+    padding: 10px 15px;
 }
-
+input:focus , textarea:focus{
+    box-shadow: 8px 4px 11px -5px rgba(190,156,221,1);
+    outline: 0px;
+}
 /*Enviar*/
 input[type="submit"] {
     display: block;
-    padding: 10px 20px;
+    padding: 15px 25px;
     margin: 0 5px;/* 0 auto para centar*/
     background-color:  rgb(190, 156, 221);
     color: white;
     border: 2px solid rgb(228, 226, 226);
-    border-radius: 20px;
+    border-radius: 25px;
     font-weight: bolder;
     transition-property: background-color;
     transition-duration: 1s;
@@ -523,14 +610,34 @@ footer{
     display: none;
 }
 
+/* MEDIA QUERY DESKTOP -- Lista que aparece en Desktop --*/
+@media (min-width: 970px){
+    .footer__menu--simple{
+        display: flex ;
+    }
+}
+
 /*lista oculta de menu--simple*/
 .footer__navegacion{
     display: flex;
 }  
 
 .footer__lista--simple{
-    font-size: 0.75rem;
+    font-size: 0.80rem;
     margin-left: 10px;
+}
+
+/* MEDIA QUERY DESKTOP -- Footer lista que aparece --*/
+@media (min-width: 970px){
+    .footer__lista--simple{
+        display: flex ;
+        color: white;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+    .footer__lista--simple:hover{
+        font-weight: bolder;
+    }
 }
 
 /* iconos link*/
