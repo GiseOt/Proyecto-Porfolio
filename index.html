@@ -24,11 +24,11 @@
                 <p class="presentacion__nombre">¡Hola! soy</p>
                 <h1 class="hola__nombre--color">Gisella </h1>
                 <h2 class="hola__nombre--color">Ortiz de la Tabla</h2>
-                <p class="presentacion__parrafo">Desarrolladora Fronted, amante de la naturaleza y fans de Friends.</span></p>
+                <p class="presentacion__parrafo">Desarrolladora Fronted, amante de la naturaleza y fans de Friends.</p>
                 <a href="#proyectos" class="link__proyectos--color">lo que hago</a>
             </div>
             <div class="presentacion__imagen">
-                <img src="./imagenes/imagen presentacion.png" alt="Mujer con un ordenador" class="img__presentacion">
+                <img src="./imagenes/imagen-presentacion.png" alt="Mujer con un ordenador" class="img__presentacion">
             </div>
         </section>
         <!--seccion conocimientos-->
@@ -67,7 +67,7 @@
         <!--seccion__cita-->
         <section class="section__cita">
             <i class="fa-solid fa-quote-left"></i>
-            <p class="cita__parrafo">Siempre parece imposible... hasta que se hace.</p>
+            <h4 class="cita__parrafo">Siempre parece imposible... hasta que se hace.</h4>
             <p class="cita__autor--grande">Nelson Mandela</p>
 
         </section>
@@ -79,25 +79,25 @@
             </div>
             <div class="proyectos__cajas">
                 <div class="cajas__imagenes">
-                    <a href="#hola"><img src="./imagenes/imagen presentacion.png" alt="Mujer con ordenador"><p>Portfolio</p></a>
+                    <a href="#hola"><img src="./imagenes/imagen-presentacion.png" alt="Mujer con ordenador"><p>Portfolio</p></a>
                 </div>
                 <div class="cajas__imagenes">
-                    <a href="#"><img src="./imagenes/generador de memes.png" alt="Mujer jugando con un globo"><p>Generador de memes</p></a>
+                    <a href="#"><img src="./imagenes/generador-de-memes.png" alt="Mujer jugando con un globo"><p>Generador de memes</p></a>
                 </div>  
                 <div class="cajas__imagenes">
                     <a href="#"><img src="./imagenes/match-3.png" alt="Mujer mirando varios dispositivos"><p>Match 3</p></a>
                 </div> 
                 <div class="cajas__imagenes">
-                    <a href="#"><img src="./imagenes/controlador de gastos.png" alt="Mujer mirando sus gastos"><p>Controlador de gastos</p></a>
+                    <a href="#"><img src="./imagenes/controlador-de-gastos.png" alt="Mujer mirando sus gastos"><p>Controlador de gastos</p></a>
                 </div>  
                 <div class="cajas__imagenes">
-                    <a href="#"><img src="./imagenes/administrador de reuniones.png" alt="Mujer con un calendario"><p>Administrador de reuniones</p></a>
+                    <a href="#"><img src="./imagenes/administrador-de-reuniones.png" alt="Mujer con un calendario"><p>Administrador de reuniones</p></a>
                 </div>
                 <div class="cajas__imagenes">
                     <a href="#"><img src="./imagenes/todo-app.png" alt="Mujer con el telefono"><p>Todo App</p></a>
                 </div>
                 <div class="cajas__imagenes">  
-                    <a href="#"><img src="./imagenes/buscador de peliculas.png" alt="Mujer disfrazada de SuperWoman"><p>Buscador de películas</p></a>
+                    <a href="#"><img src="./imagenes/buscador-de-peliculas.png" alt="Mujer disfrazada de SuperWoman"><p>Buscador de películas</p></a>
                 </div>
             </div>
         </section>
@@ -117,7 +117,7 @@
                 
             </div>
             <div class="contacto__escribime"><!--formulario-->
-                <form action="gracias.html"><!--falta crear archivo gracias.html-->
+                <form action= "javascript:void(0);">
                     <h2 class="formulario__titulo">¿Hablamos?</h2>
                     <fieldset>
                         <legend>Datos de contacto</legend>
@@ -132,7 +132,8 @@
                                     aria-label="nombre" 
                                     id="input__nombre"
                                     tabindex="1"
-                                    required/>
+                                    required
+                                />
                                 <label for="input__apellido">Apellido</label>
                                 <input
                                     type="text"
@@ -142,7 +143,8 @@
                                     aria-label="apellido" 
                                     id="input__apellido"
                                     tabindex="2"
-                                    required/>
+                                    required
+                                />
                             </div>
                             <div class="input__container--column">
                                 <label for="input__email">E-mail</label>
@@ -155,7 +157,8 @@
                                     id="input__email"
                                     autocomplete="off"
                                     tabindex="3"
-                                    required />
+                                    required
+                                />
                             </div>
                             <div class="input__container--column">
                                 <label for="input__telefono">Teléfono</label>
@@ -168,22 +171,34 @@
                                     aria-label="telefono" 
                                     tabindex="4"
                                     id="input__telefono"
-                                    required />
+                                    required
+                                />
                             </div>
                             <div class="input__container--column">
                                 <label for="mensaje">Mensaje</label> 
                                 <textarea
                                     placeholder="Escribe tu mensaje"
                                     name="mensaje"
+                                    id="mensaje"
                                     class="form__textarea"
                                     tabindex="5"
                                     required></textarea>                        
                             </div>
                             </div>
                     </fieldset>
-                    <input type="submit" value="Enviar" />
+                    <input type="submit" value="Enviar" class="open-modal-link" />
                 </form>
             </div>
+            <!--modal formulario-->
+            <div class="modal__container">
+                <span class="modal__close_btn"></span>
+                <h2 class="modal__title">¡Muchas gracias!</h2>
+                <p class="modal__legend">
+                    Tu mensaje ha sido enviado, me pondré contacto lo antes posible.💌
+                </p>
+                <button class="modal__btn">Salir</button>
+            </div>
+            <div class="modal__cover"></div>
         </section>
     </main>
     <footer> 
@@ -193,10 +208,9 @@
                 <li><a href="#conocimientos" class="footer__lista--simple">Conocimientos</a></li>
                 <li><a href="#proyectos" class="footer__lista--simple">Proyectos</a></li>
                 <li><a href="#contacto" class="footer__lista--simple">Contacto</a></li>
-
             </ul>
         </nav>
-        <div class="footer__contacto--logo"></div><!--lo reemplace por la lista --> 
+        <div class="footer__contacto--logo"><!--lo reemplace por la lista --> 
         <ul class="footer__lista">
             <li class="footer__link"><a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"><i class="fa-brands fa-linkedin-in"></i></a></li>
             <li class="footer__link"><a href="mailto:gisellanalia@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
@@ -204,9 +218,23 @@
             <li class="footer__link" ><a href="https://github.com/GiseOt"><i class="fa-brands fa-github-alt"></i></a></li>
         </ul>
         <p class="footer__parrafo">Hecho con 💜 por Gisella</p>
-    </div>
+        </div>
     </footer>
-    <script src="https://kit.fontawesome.com/04baa38fa8.js" crossorigin="anonymous"></script>
-
+        <!--script Fontawesome -->
+        <script src="https://kit.fontawesome.com/04baa38fa8.js" crossorigin="anonymous"></script>
+        <!--script Modal-->
+        <script>
+        const bodyTag = document.querySelector("body");
+        const openModalLink = document.querySelector(".open-modal-link");
+        const modalAcceptBtn = document.querySelector(".modal__btn");
+    
+        openModalLink.addEventListener("click", () => {
+            bodyTag.classList.add("open__modal");
+        });
+    
+        modalAcceptBtn.addEventListener("click", () => {
+            bodyTag.classList.remove("open__modal");
+        });
+        </script>
 </body>
 </html>
