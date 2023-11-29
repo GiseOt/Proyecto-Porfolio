@@ -200,7 +200,7 @@ h2{
     font-size: 1.875rem;
     margin-bottom: 15px;
     text-align: center;
-    text-shadow: 3px 3px 1px rgba(177,94,255,0.32);
+    text-shadow: 2px 2px 1px rgba(177,94,255,0.32);
 
 } 
 
@@ -359,7 +359,7 @@ color: rgb(177, 94, 255);
 
 /* Todos los parrafos de proyecto__caja*/
 .proyectos__cajas p{
-    padding-bottom: 30px;
+    padding-bottom: 13px;
     font-weight: bolder;
 }
 
