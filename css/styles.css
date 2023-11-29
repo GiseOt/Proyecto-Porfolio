@@ -420,12 +420,12 @@ color: rgb(177, 94, 255);
         width: 50%;
         max-width: 1110px;
         margin: auto;
-    }
+        }
 
-    .contacto__contactame p{
-        text-align: justify;
+        .contacto__contactame p{
+            text-align: justify;
+        }
     }
-}
 
 
 
@@ -495,7 +495,7 @@ textarea:valid {
         width: 50%;
         max-width: 1110px;
         margin:  0 auto ;
-    }
+        }
 }
 
 /* Nombre y Apellido en Mobile es column y en Desktop es row -hijo 1*/
@@ -601,7 +601,7 @@ input[type="submit"]:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 20px;
+    padding:15px;
     border: 1px solid #ccc;
     z-index: 9999;
     text-align: center;
@@ -612,12 +612,24 @@ input[type="submit"]:hover{
     margin-bottom: 10px;
 }
 
+.modal__container p {
+    margin: 0; 
+}
+
 /*Modal boton cerrar*/
-.modal__close_btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.modal__btn {
     cursor: pointer;
+    background-color:  rgb(190, 156, 221);
+    color: white;
+    border: 2px solid rgb(228, 226, 226);
+    border-radius: 20px;
+    display: block;
+    padding: 5px 10px;
+    margin:  5px auto;
+}
+
+.modal__btn:hover {
+    background-color:rgb(219, 196, 241);
 }
 
 /* Fondo  */
@@ -640,38 +652,6 @@ body.open__modal {
 .open__modal .modal__cover {
     display: block;
 }
-
-/*----- Estilos para el formulario -----*/
-.contacto__escribime {
-    margin: 50px auto;
-    width: 80%;
-    max-width: 600px;
-}
-
-.formulario__titulo {
-    margin-bottom: 20px;
-    font-size: 1.8em;
-}
-
-fieldset {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-legend {
-    font-weight: bold;
-}
-
-.form__input,
-.form__textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-}
-
-
-
 /*-------------FOOTER-------------------------------------*/
 
 footer{
@@ -740,4 +720,3 @@ footer{
 .footer__parrafo{
     color: white;
 }
-

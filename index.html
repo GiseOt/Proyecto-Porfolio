@@ -186,7 +186,7 @@
                             </div>
                             </div>
                     </fieldset>
-                    <input type="submit" value="Enviar" class="open-modal-link" />
+                    <input type="submit" value="Enviar" class="open-modal-link"/>
                 </form>
             </div>
             <!--modal formulario-->
@@ -224,17 +224,17 @@
         <script src="https://kit.fontawesome.com/04baa38fa8.js" crossorigin="anonymous"></script>
         <!--script Modal-->
         <script>
-        const bodyTag = document.querySelector("body");
-        const openModalLink = document.querySelector(".open-modal-link");
-        const modalAcceptBtn = document.querySelector(".modal__btn");
-    
-        openModalLink.addEventListener("click", () => {
-            bodyTag.classList.add("open__modal");
-        });
-    
-        modalAcceptBtn.addEventListener("click", () => {
-            bodyTag.classList.remove("open__modal");
-        });
+            const bodyTag = document.querySelector("body");
+            const openModalLink = document.querySelector(".open-modal-link");
+            const modalAcceptBtn = document.querySelector(".modal__btn");
+        
+            openModalLink.addEventListener("click", () => {
+                bodyTag.classList.add("open__modal");
+            });
+        
+            modalAcceptBtn.addEventListener("click", () => {
+                bodyTag.classList.remove("open__modal");
+            });
         </script>
 </body>
 </html>
