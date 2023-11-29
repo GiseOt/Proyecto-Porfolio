@@ -6,7 +6,7 @@
 
 Mi nombre es Gisella, una apasionada desarrolladora en constante aprendizaje. Estoy comenzando en este hermoso camino de la programación y la creación de proyectos interesantes. **Este portfolio es mi manera de compartir mi trabajo y mi evolución en este emocionante mundo.**
 
-###:point_right: Descripción
+### :point_right: Descripción
 
 Este proyecto está diseñado para mostrar una selección de mis trabajos y proyectos personales. Incluye secciones que destacan mis conocimientos y mis proyectos. También encontrarás una sección de contacto para que puedas comunicarte conmigo.
 
