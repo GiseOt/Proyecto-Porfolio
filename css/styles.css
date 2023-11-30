@@ -393,17 +393,35 @@ color: rgb(177, 94, 255);
 
 /*--------SECCION CONTACTO---------------------------------------------------*/
 
-.section__contacto{
+/* Div padre*/
+.contactame{
     display: flex;
     flex-direction: column;
+    gap: 45px
 }
-/* MEDIA QUERY DESKTOP -- .section__contacto / div padre --*/
+/* MEDIA QUERY DESKTOP -- .div Padre-*/
+@media (min-width: 970px){
+    .contactame{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        flex-wrap: nowrap;
+        width: 80%;
+        margin: auto;
+        padding: 30px;
+        border-radius: 15px
+    }
+
+}
+
+/* MEDIA QUERY DESKTOP -- .section__contacto / seccion ---*/
 @media (min-width: 970px){
 .section__contacto{
-    flex-direction: row;
-    margin: auto;
-    border-radius: 5px;
-    padding-inline: 100px;
+    display: flex;
+    background: rgb(238,174,202);
+    background: linear-gradient(10deg, rgba(238,174,202,1) 0%, rgba(190,156,221,0.3) 66%);
+    width: calc(100% + 40px);
+    margin-left: -20px;;
     }
 }
 
@@ -426,8 +444,6 @@ color: rgb(177, 94, 255);
             text-align: justify;
         }
     }
-
-
 
 /*iconos de Contacto*/
 .contacto i {
