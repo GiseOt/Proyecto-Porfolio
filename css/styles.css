@@ -19,10 +19,12 @@ body {
     max-width: 1100px;
 }
 }
+
 /*----header-----*/
 header{
     display: none;
-} 
+}
+
 /* MEDIA QUERY DESKTOP ---header*/
 @media (min-width: 970px) {
 header {
@@ -37,6 +39,7 @@ header {
     top: 0;
     width: 100%;  
     scroll-margin-top: 100px ;
+    z-index: 1000;
     }
 
 /* Mi lista UL*/
@@ -78,6 +81,7 @@ a{
     text-decoration: none; 
     color:black;
 }
+
 section{
     display: flex;
     flex-direction: column;
@@ -399,7 +403,7 @@ color: rgb(177, 94, 255);
     flex-direction: column;
     gap: 45px
 }
-/* MEDIA QUERY DESKTOP -- .div Padre-*/
+/* MEDIA QUERY DESKTOP -- div Padre--*/
 @media (min-width: 970px){
     .contactame{
         display: flex;
@@ -422,6 +426,7 @@ color: rgb(177, 94, 255);
     background: linear-gradient(10deg, rgba(238,174,202,1) 0%, rgba(190,156,221,0.3) 66%);
     width: calc(100% + 40px);
     margin-left: -20px;;
+    padding-block: 185px;
     }
 }
 
@@ -573,7 +578,6 @@ label{
     flex-direction: column;
 
 }
-
 
 input , textarea{
     border: 1px ;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="imagenes/generador-de-memes.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Proyecto Portfolio</title>
 </head>
@@ -22,10 +23,10 @@
         <!--seccion hola-->
         <section class="section__presentacion" id="hola">
             <div class="presentacion__hola">
-                <p class="presentacion__nombre">¡Hola! soy</p>
+                <p class="presentacion__nombre" >¡Hola! soy</p>
                 <h1 class="hola__nombre--color">Gisella </h1>
                 <h2 class="hola__nombre--color">Ortiz de la Tabla</h2>
-                <p class="presentacion__parrafo">Desarrolladora Fronted, amante de la naturaleza y fan de Friends.</p>
+                <p class="presentacion__parrafo">Desarrolladora Front-end, amante de la naturaleza y fan de Friends.</p>
                 <a href="#proyectos" class="link__proyectos--color" tabindex="4">lo que hago</a>
             </div>
             <div class="presentacion__imagen">
@@ -38,7 +39,7 @@
                 <h2> Mis conocimientos</h2>
                 <p class="conocimientos__texto__parrafo">En esta sección, te enseño lo que he aprendido en este camino de la programación, mostrando cómo he crecido y ganado experiencia en distintas materias. </p>
             </div>
-            <div class="conocimientos__cajas">
+            <div class="conocimientos__cajas" data-aos="fade-up">
                 <div class="conocimientos__icono__texto"><!--icono + texto / caja 1-->
                     <i class="fa-brands fa-html5"></i>
                     <p class="conocimientos__parrafo">HTML 5</p>
@@ -68,7 +69,7 @@
         <!--seccion__cita-->
         <section class="section__cita">
             <i class="fa-solid fa-quote-left"></i>
-            <h4 class="cita__parrafo">Siempre parece imposible... hasta que se hace.</h4>
+            <h4 class="cita__parrafo" data-aos="fade-up" >Siempre parece imposible... hasta que se hace.</h4>
             <p class="cita__autor--grande">Nelson Mandela</p>
 
         </section>
@@ -78,7 +79,7 @@
                 <h2> Mis proyectos</h2>
                 <p>Como dice la cita más arriba "parece imposible hasta que se hace", por ello aquí muestro los frutos de mi creatividad en cada línea de código. ¡Espero que disfruten explorando estos proyectos tanto como yo disfruté creándolos!</p>
             </div>
-            <div class="proyectos__cajas">
+            <div class="proyectos__cajas" data-aos="fade-up" >
                 <div class="cajas__imagenes">
                     <a href="#hola" tabindex="5"><img src="./imagenes/imagen-presentacion.png" alt="Mujer con ordenador"><p>Portfolio</p></a>
                 </div>
@@ -104,7 +105,7 @@
         </section>
         <!--seccion contacto-->
         <section class="section__contacto" id="contacto">
-            <div class="contactame">
+            <div class="contactame" data-aos="fade-up">
             <div class="contacto__contactame">
                 <h2>Contáctame</h2>
                 <p>Aquí, no solo puedes explorar mis habilidades y proyectos, sino también establecer un enlace directo conmigo. Estoy ansiosa por conectarme contigo y colaborar en futuros proyectos emocionantes o responder a tus preguntas. ¡No dudes en hacerlo!💜</p>
@@ -204,8 +205,8 @@
         </div>
         </section>
     </main>
-    <footer> 
-        <nav class="footer__menu--simple">
+    <footer> <!--Footer --> 
+        <nav class="footer__menu--simple"><!--primer menu-->
             <ul class="footer__navegacion">
                 <li><a href="#hola" class="footer__lista--simple" tabindex="22">Hola</a></li>
                 <li><a href="#conocimientos" class="footer__lista--simple" tabindex="23">Conocimientos</a></li>
@@ -213,7 +214,7 @@
                 <li><a href="#contacto" class="footer__lista--simple" tabindex="25">Contacto</a></li>
             </ul>
         </nav>
-        <div class="footer__contacto--logo"><!--lo reemplace por la lista --> 
+        <div class="footer__contacto--logo"><!--lo reemplace por la lista / segundo menu --> 
         <ul class="footer__lista">
             <li class="footer__link"><a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/" tabindex="26"><i class="fa-brands fa-linkedin-in"></i></a></li>
             <li class="footer__link"><a href="mailto:gisellanalia@gmail.com" tabindex="27"><i class="fa-regular fa-envelope"></i></a></li>
@@ -237,6 +238,14 @@
         
             modalAcceptBtn.addEventListener("click", () => {
                 bodyTag.classList.remove("open__modal");
+            });
+        </script>
+        <!--script Animación Scroll-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!--script para inicializar mi Animación Scroll-->
+        <script>
+            AOS.init({
+                duration: 1000
             });
         </script>
 </body>
