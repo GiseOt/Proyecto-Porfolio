@@ -1,252 +1,425 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="imagenes/generador-de-memes.png">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Proyecto Portfolio</title>
-</head>
-<body>
-    <header>
-        <nav class="menu">
-            <ul class="menu__navegacion">
-                <li><a href="#hola" class="menu__lista">Hola</a></li>
-                <li><a href="#conocimientos" class="menu__lista" tabindex="1">Conocimientos</a></li>
-                <li><a href="#proyectos" class="menu__lista" tabindex="2">Proyectos</a></li>
-                <li><a href="#contacto" class="menu__lista--color" tabindex="3">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!--seccion hola-->
-        <section class="section__presentacion" id="hola">
-            <div class="presentacion__hola">
-                <p class="presentacion__nombre" >¡Hola! soy</p>
-                <h1 class="hola__nombre--color">Gisella </h1>
-                <h2 class="hola__nombre--color">Ortiz de la Tabla</h2>
-                <p class="presentacion__parrafo">Desarrolladora Front-end, amante de la naturaleza y fan de Friends.</p>
-                <a href="#proyectos" class="link__proyectos--color" tabindex="4">lo que hago</a>
-            </div>
-            <div class="presentacion__imagen">
-                <img src="./imagenes/imagen-presentacion.png" alt="Mujer con un ordenador" class="img__presentacion">
-            </div>
-        </section>
-        <!--seccion conocimientos-->
-        <section class="section__conocimientos--color" id="conocimientos">
-            <div class="conocimientos__texto">
-                <h2> Mis conocimientos</h2>
-                <p class="conocimientos__texto__parrafo">En esta sección, te enseño lo que he aprendido en este camino de la programación, mostrando cómo he crecido y ganado experiencia en distintas materias. </p>
-            </div>
-            <div class="conocimientos__cajas" data-aos="fade-up">
-                <div class="conocimientos__icono__texto"><!--icono + texto / caja 1-->
-                    <i class="fa-brands fa-html5"></i>
-                    <p class="conocimientos__parrafo">HTML 5</p>
-                </div>
-                <div class="conocimientos__icono__texto" ><!--icono + texto / caja 2-->
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <p class="conocimientos__parrafo"> CSS 3</p>
-                </div>
-                <div class="conocimientos__icono__texto"><!--icono + texto / caja 3-->
-                    <i class="fa-brands fa-sass"></i>
-                    <p class="conocimientos__parrafo">Sass</p>
-                </div>
-                <div class="conocimientos__icono__texto"><!--icono + texto / caja 4-->
-                    <i class="fa-brands fa-js"></i>
-                    <p class="conocimientos__parrafo">JavaScript</p>
-                </div>
-                <div class="conocimientos__icono__texto" ><!--icono + texto / caja 5-->
-                    <i class="fa-brands fa-react"></i>
-                    <p class="conocimientos__parrafo">React</p>
-                </div>
-                <div class="conocimientos__icono__texto"><!--icono + texto / caja 6-->
-                    <i class="fa-brands fa-git-alt"></i>
-                    <p class="conocimientos__parrafo">GIT</p>
-                </div>
-            </div>
-        </section>
-        <!--seccion__cita-->
-        <section class="section__cita">
-            <i class="fa-solid fa-quote-left"></i>
-            <h4 class="cita__parrafo" data-aos="fade-up" >Siempre parece imposible... hasta que se hace.</h4>
-            <p class="cita__autor--grande">Nelson Mandela</p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="imagenes/generador-de-memes.png" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Proyecto Portfolio</title>
+	</head>
+	<body>
+		<header>
+			<nav class="menu">
+				<ul class="menu__navegacion">
+					<li><a href="#hola" class="menu__lista">Hola</a></li>
+					<li>
+						<a href="#conocimientos" class="menu__lista" tabindex="1"
+							>Conocimientos</a
+						>
+					</li>
+					<li>
+						<a href="#proyectos" class="menu__lista" tabindex="2">Proyectos</a>
+					</li>
+					<li>
+						<a href="#contacto" class="menu__lista--color" tabindex="3"
+							>Contacto</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!--seccion hola-->
+			<section class="section__presentacion" id="hola">
+				<div class="presentacion__hola">
+					<p class="presentacion__nombre">¡Hola! soy</p>
+					<h1 class="hola__nombre--color">Gisella</h1>
+					<h2 class="hola__nombre--color">Ortiz de la Tabla</h2>
+					<p class="presentacion__parrafo">
+						Desarrolladora Front-end, amante de la naturaleza y fan de Friends.
+					</p>
+					<a href="#proyectos" class="link__proyectos--color" tabindex="4"
+						>lo que hago</a
+					>
+				</div>
+				<div class="presentacion__imagen">
+					<img
+						src="./imagenes/imagen-presentacion.png"
+						alt="Mujer con un ordenador"
+						class="img__presentacion"
+					/>
+				</div>
+			</section>
+			<!--seccion conocimientos-->
+			<section class="section__conocimientos--color" id="conocimientos">
+				<div class="conocimientos__texto">
+					<h2>Mis conocimientos</h2>
+					<p class="conocimientos__texto__parrafo">
+						En esta sección, te enseño lo que he aprendido en este camino de la
+						programación, mostrando cómo he crecido y ganado experiencia en
+						distintas materias.
+                        Actualmente en proceso de adquirir habilidades en React.
+					</p>
+				</div>
+				<div class="conocimientos__cajas" data-aos="fade-up">
+					<div class="conocimientos__icono__texto">
+						<!--icono + texto / caja 1-->
+						<i class="fa-brands fa-html5"></i>
+						<p class="conocimientos__parrafo">HTML 5</p>
+					</div>
+					<div class="conocimientos__icono__texto">
+						<!--icono + texto / caja 2-->
+						<i class="fa-brands fa-css3-alt"></i>
+						<p class="conocimientos__parrafo">CSS 3</p>
+					</div>
+					<div class="conocimientos__icono__texto">
+						<!--icono + texto / caja 3-->
+						<i class="fa-brands fa-sass"></i>
+						<p class="conocimientos__parrafo">Sass</p>
+					</div>
+					<div class="conocimientos__icono__texto">
+						<!--icono + texto / caja 4-->
+						<i class="fa-brands fa-js"></i>
+						<p class="conocimientos__parrafo">JavaScript</p>
+					</div>
+					<div class="conocimientos__icono__texto">
+						<!--icono + texto / caja 5-->
+						<i class="fa-brands fa-git-alt"></i>
+						<p class="conocimientos__parrafo">GIT</p>
+					</div>
+					<div class="conocimientos__icono__texto">
+						<!--icono + texto / caja 6-->
+                        <i class="fa-brands fa-react"></i>
+						<p class="conocimientos__parrafo">React</p>
+					</div>
+				</div>
+			</section>
+			<!--seccion__cita-->
+			<section class="section__cita">
+				<i class="fa-solid fa-quote-left"></i>
+				<h4 class="cita__parrafo" data-aos="fade-up">
+					Siempre parece imposible... hasta que se hace.
+				</h4>
+				<p class="cita__autor--grande">Nelson Mandela</p>
+			</section>
+			<!--seccion proyectos-->
+			<section class="section__proyectos" id="proyectos">
+				<div class="section__proyectos__texto">
+					<h2>Mis proyectos</h2>
+					<p>
+						Como dice la cita más arriba "parece imposible hasta que se hace",
+						por ello aquí muestro los frutos de mi creatividad en cada línea de
+						código. ¡Espero que disfruten explorando estos proyectos tanto como
+						yo disfruté creándolos!
+					</p>
+				</div>
+				<div class="proyectos__cajas" data-aos="fade-up">
+					<div class="cajas__imagenes">
+						<a href="#hola" tabindex="5"
+							><img
+								src="./imagenes/imagen-presentacion.png"
+								alt="Mujer con ordenador"
+							/>
+							<p>Portfolio</p></a
+						>
+					</div>
+					<div class="cajas__imagenes">
+						<a href="https://giseot.github.io/Proyecto-Generador-de-Memes/" tabindex="6"
+							><img
+								src="./imagenes/generador-de-memes.png"
+								alt="Mujer jugando con un globo"
+							/>
+							<p>Generador de memes</p></a
+						>
+					</div>
+					<div class="cajas__imagenes">
+						<a href="https://giseot.github.io/Card-Templates/" tabindex="7"
+							><img
+								src="./imagenes/cards_template.png"
+								alt="Mujer diseñando"
+							/>
+							<p>Cards</p></a
+						>
+					</div>
+					<div class="cajas__imagenes">
+						<a href="https://giseot.github.io/Card-Usuario/" tabindex="8"
+							><img
+								src="./imagenes/card_usuario.png"
+								alt="Mujer mirando sus gastos"
+							/>
+							<p>Card Usuario</p></a
+						>
+					</div>
+					<div class="cajas__imagenes">
+						<a href="https://giseot.github.io/Web-TailwindCSS/" tabindex="9"
+							><img
+								src="./imagenes/tailwind.2.png"
+								alt="Mujer con un calendario"
+							/>
+							<p>Web con Tailwind CSS</p></a
+						>
+					</div>
+					<div class="cajas__imagenes">
+						<a href="enProceso.html" tabindex="10"
+							><img
+								src="./imagenes/match-3.png"
+								alt="Mujer mirando varios dispositivos"
+							/>
+							<p>Match 3</p></a
+						>
+					</div>
+					<div class="cajas__imagenes">
+						<a href="enProceso.html" tabindex="11"
+							><img
+								src="./imagenes/controlador-de-gastos.png"
+								alt="Mujer mirando sus gastos"
+							/>
+							<p>Controlador de gastos</p></a
+						>
+					</div>
+                    <div class="cajas__imagenes">
+						<a href="enProceso.html" tabindex="12"
+							><img
+								src="./imagenes/administrador-de-reuniones.png"
+								alt="Mujer con un calendario"
+							/>
+							<p>Administrador de reuniones</p></a
+						>
+					</div>
+					<div class="cajas__imagenes">
+						<a href="enProceso.html" tabindex="13"
+							><img src="./imagenes/todo-app.png" alt="Mujer con el telefono" />
+							<p>Todo App</p></a
+						>
+					</div>
+					<div class="cajas__imagenes">
+						<a href="enProceso.html" tabindex="14"
+							><img
+								src="./imagenes/buscador-de-peliculas.png"
+								alt="Mujer disfrazada de SuperWoman"
+							/>
+							<p>Buscador de películas</p></a
+						>
+					</div>
+				</div>
+			</section>
+			<!--seccion contacto-->
+			<section class="section__contacto" id="contacto">
+				<div class="contactame">
+					<div class="contacto__contactame">
+						<h2 data-aos="fade-up">Contáctame</h2>
+						<p>
+							Aquí, no solo puedes explorar mis habilidades y proyectos, sino
+							también establecer un enlace directo conmigo. Estoy ansiosa por
+							conectarme contigo y colaborar en futuros proyectos emocionantes o
+							responder a tus preguntas. ¡No dudes en hacerlo!💜
+						</p>
+						<div class="contacto">
+							<ul class="contacto__lista">
+								<li class="contacto__link--color">
+									<a
+										class="prueba"
+										href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"
+										tabindex="15"
+										><i class="fa-brands fa-linkedin-in"></i>Gisella Ortiz de la
+										Tabla</a
+									>
+								</li>
+								<li class="contacto__link--color">
+									<a href="mailto:gisellanalia@gmail.com" tabindex="16"
+										><i class="fa-regular fa-envelope"></i
+										>gisellanalia@gmail.com</a
+									>
+								</li>
+								<li class="contacto__link--color">
+									<a href="https://twitter.com/gisella_ot" tabindex="17"
+										><i class="fa-brands fa-twitter"></i>@gisella_ot</a
+									>
+								</li>
+								<li class="contacto__link--color">
+									<a href="https://github.com/GiseOt" tabindex="18"
+										><i class="fa-brands fa-github-alt"></i>GiseOt</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contacto__escribime">
+						<!--formulario-->
+						<form action="https://formsubmit.co/gisellanalia@gmail.com" method="POST">
+							<h2 class="formulario__titulo" data-aos="fade-up">¿Hablamos?</h2>
+							<fieldset>
+								<legend>Datos de contacto</legend>
+								<div class="datos__contactame">
+									<div class="input__container--row">
+										<label for="input__nombre">Nombre</label>
+										<input
+											type="text"
+											placeholder="Tu nombre"
+											name="nombre"
+											class="form__input"
+											aria-label="nombre"
+											id="input__nombre"
+											tabindex="19"
+											required
+										/>
+										<label for="input__apellido">Apellido</label>
+										<input
+											type="text"
+											placeholder="Tu apellido"
+											name="apellido"
+											class="form__input"
+											aria-label="apellido"
+											id="input__apellido"
+											tabindex="20"
+											required
+										/>
+									</div>
+									<div class="input__container--column">
+										<label for="input__email">E-mail</label>
+										<input
+											type="email"
+											placeholder="Tu e-mail"
+											name="email"
+											class="form__input"
+											aria-label="e-mail"
+											id="input__email"
+											autocomplete="off"
+											tabindex="21"
+											required
+										/>
+									</div>
+									<div class="input__container--column">
+										<label for="input__telefono">Teléfono</label>
+										<input
+											type="tel"
+											placeholder="Tu teléfono"
+											name="telefono"
+											pattern="[0-9]+"
+											class="form__input"
+											aria-label="telefono"
+											tabindex="22"
+											id="input__telefono"
+											required
+										/>
+									</div>
+									<div class="input__container--column">
+										<label for="mensaje">Mensaje</label>
+										<textarea
+											placeholder="Escribe tu mensaje"
+											name="mensaje"
+											id="mensaje"
+											class="form__textarea"
+											tabindex="23"
+											required
+										></textarea>
+									</div>
+								</div>
+							</fieldset>
+							<input
+								type="submit"
+								value="Enviar"
+								class="open-modal-link"
+								tabindex="24"
+							/>
+						</form>
+					</div>
+					<!--modal formulario-->
+					<div class="modal__container">
+						<span class="modal__close_btn"></span>
+						<h2 class="modal__title">¡Muchas gracias!</h2>
+						<p class="modal__legend">
+							Tu mensaje ha sido enviado, me pondré en contacto lo antes
+							posible.💌
+						</p>
+						<button class="modal__btn">Salir</button>
+					</div>
+					<div class="modal__cover"></div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<!--Footer -->
+			<nav class="footer__menu--simple">
+				<!--primer menu-->
+				<ul class="footer__navegacion">
+					<li>
+						<a href="#hola" class="footer__lista--simple" tabindex="25">Hola</a>
+					</li>
+					<li>
+						<a href="#conocimientos" class="footer__lista--simple" tabindex="26"
+							>Conocimientos</a
+						>
+					</li>
+					<li>
+						<a href="#proyectos" class="footer__lista--simple" tabindex="27"
+							>Proyectos</a
+						>
+					</li>
+					<li>
+						<a href="#contacto" class="footer__lista--simple" tabindex="28"
+							>Contacto</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer__contacto--logo">
+				<!--lo reemplace por la lista / segundo menu -->
+				<ul class="footer__lista">
+					<li class="footer__link">
+						<a
+							href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/"
+							tabindex="29"
+							><i class="fa-brands fa-linkedin-in"></i
+						></a>
+					</li>
+					<li class="footer__link">
+						<a href="mailto:gisellanalia@gmail.com" tabindex="30"
+							><i class="fa-regular fa-envelope"></i
+						></a>
+					</li>
+					<li class="footer__link">
+						<a href="https://twitter.com/gisella_ot" tabindex="31"
+							><i class="fa-brands fa-twitter"></i
+						></a>
+					</li>
+					<li class="footer__link">
+						<a href="https://github.com/GiseOt" tabindex="32"
+							><i class="fa-brands fa-github-alt"></i
+						></a>
+					</li>
+				</ul>
+				<p class="footer__parrafo">Hecho con 💜 por Gisella</p>
+			</div>
+		</footer>
+		<!--script Fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/04baa38fa8.js"
+			crossorigin="anonymous"
+		></script>
+		<!--script Modal-->
+		<script>
+			const bodyTag = document.querySelector("body");
+			const openModalLink = document.querySelector(".open-modal-link");
+			const modalAcceptBtn = document.querySelector(".modal__btn");
 
-        </section>
-        <!--seccion proyectos-->
-        <section class="section__proyectos" id="proyectos">
-            <div class="section__proyectos__texto">
-                <h2> Mis proyectos</h2>
-                <p>Como dice la cita más arriba "parece imposible hasta que se hace", por ello aquí muestro los frutos de mi creatividad en cada línea de código. ¡Espero que disfruten explorando estos proyectos tanto como yo disfruté creándolos!</p>
-            </div>
-            <div class="proyectos__cajas" data-aos="fade-up" >
-                <div class="cajas__imagenes">
-                    <a href="#hola" tabindex="5"><img src="./imagenes/imagen-presentacion.png" alt="Mujer con ordenador"><p>Portfolio</p></a>
-                </div>
-                <div class="cajas__imagenes">
-                    <a href="#" tabindex="6"><img src="./imagenes/generador-de-memes.png" alt="Mujer jugando con un globo"><p>Generador de memes</p></a>
-                </div>  
-                <div class="cajas__imagenes">
-                    <a href="#" tabindex="7"><img src="./imagenes/match-3.png" alt="Mujer mirando varios dispositivos"><p>Match 3</p></a>
-                </div> 
-                <div class="cajas__imagenes">
-                    <a href="#" tabindex="8"><img src="./imagenes/controlador-de-gastos.png" alt="Mujer mirando sus gastos"><p>Controlador de gastos</p></a>
-                </div>  
-                <div class="cajas__imagenes">
-                    <a href="#" tabindex="9"><img src="./imagenes/administrador-de-reuniones.png" alt="Mujer con un calendario"><p>Administrador de reuniones</p></a>
-                </div>
-                <div class="cajas__imagenes">
-                    <a href="#" tabindex="10"><img src="./imagenes/todo-app.png" alt="Mujer con el telefono"><p>Todo App</p></a>
-                </div>
-                <div class="cajas__imagenes">  
-                    <a href="#" tabindex="11"><img src="./imagenes/buscador-de-peliculas.png" alt="Mujer disfrazada de SuperWoman"><p>Buscador de películas</p></a>
-                </div>
-            </div>
-        </section>
-        <!--seccion contacto-->
-        <section class="section__contacto" id="contacto">
-            <div class="contactame">
-            <div class="contacto__contactame">
-                <h2 data-aos="fade-up">Contáctame</h2>
-                <p>Aquí, no solo puedes explorar mis habilidades y proyectos, sino también establecer un enlace directo conmigo. Estoy ansiosa por conectarme contigo y colaborar en futuros proyectos emocionantes o responder a tus preguntas. ¡No dudes en hacerlo!💜</p>
-                <div class="contacto">
-                    <ul class="contacto__lista">
-                        <li class="contacto__link--color"><a class="prueba" href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/" tabindex="12"><i class="fa-brands fa-linkedin-in"></i>Gisella Ortiz de la Tabla</a></li>
-                        <li class="contacto__link--color"><a href="mailto:gisellanalia@gmail.com" tabindex="13"><i class="fa-regular fa-envelope"></i>gisellanalia@gmail.com</a></li>
-                        <li class="contacto__link--color"><a href="https://twitter.com/gisella_ot" tabindex="14"><i class="fa-brands fa-twitter"></i>@gisella_ot</a></li>
-                        <li class="contacto__link--color"><a href="https://github.com/GiseOt" tabindex="15"><i class="fa-brands fa-github-alt"></i>GiseOt</a></li>
-                    </ul>
-                </div>
-                
-            </div>
-            <div class="contacto__escribime"><!--formulario-->
-                <form action= "javascript:void(0);">
-                    <h2 class="formulario__titulo" data-aos="fade-up" >¿Hablamos?</h2>
-                    <fieldset>
-                        <legend>Datos de contacto</legend>
-                        <div class="datos__contactame">
-                            <div class="input__container--row">
-                                <label for="input__nombre">Nombre</label>
-                                <input
-                                    type="text"
-                                    placeholder="Tu nombre"
-                                    name="nombre"
-                                    class="form__input"
-                                    aria-label="nombre" 
-                                    id="input__nombre"
-                                    tabindex="16"
-                                    required
-                                />
-                                <label for="input__apellido">Apellido</label>
-                                <input
-                                    type="text"
-                                    placeholder="Tu apellido"
-                                    name="apellido"
-                                    class="form__input"
-                                    aria-label="apellido" 
-                                    id="input__apellido"
-                                    tabindex="17"
-                                    required
-                                />
-                            </div>
-                            <div class="input__container--column">
-                                <label for="input__email">E-mail</label>
-                                <input
-                                    type="email"
-                                    placeholder="Tu e-mail"
-                                    name="email"
-                                    class="form__input"
-                                    aria-label="e-mail" 
-                                    id="input__email"
-                                    autocomplete="off"
-                                    tabindex="18"
-                                    required
-                                />
-                            </div>
-                            <div class="input__container--column">
-                                <label for="input__telefono">Teléfono</label>
-                                <input
-                                    type="tel"
-                                    placeholder="Tu teléfono"
-                                    name="telefono"
-                                    pattern="[0-9]+" 
-                                    class="form__input"
-                                    aria-label="telefono" 
-                                    tabindex="19"
-                                    id="input__telefono"
-                                    required
-                                />
-                            </div>
-                            <div class="input__container--column">
-                                <label for="mensaje">Mensaje</label> 
-                                <textarea
-                                    placeholder="Escribe tu mensaje"
-                                    name="mensaje"
-                                    id="mensaje"
-                                    class="form__textarea"
-                                    tabindex="20"
-                                    required></textarea>                        
-                            </div>
-                            </div>
-                    </fieldset>
-                    <input type="submit" value="Enviar" class="open-modal-link"  tabindex="21"/>
-                </form>
-            </div>
-            <!--modal formulario-->
-            <div class="modal__container">
-                <span class="modal__close_btn"></span>
-                <h2 class="modal__title">¡Muchas gracias!</h2>
-                <p class="modal__legend">
-                    Tu mensaje ha sido enviado, me pondré en contacto lo antes posible.💌
-                </p>
-                <button class="modal__btn">Salir</button>
-            </div>
-            <div class="modal__cover"></div>
-        </div>
-        </section>
-    </main>
-    <footer> <!--Footer --> 
-        <nav class="footer__menu--simple"><!--primer menu-->
-            <ul class="footer__navegacion">
-                <li><a href="#hola" class="footer__lista--simple" tabindex="22">Hola</a></li>
-                <li><a href="#conocimientos" class="footer__lista--simple" tabindex="23">Conocimientos</a></li>
-                <li><a href="#proyectos" class="footer__lista--simple" tabindex="24">Proyectos</a></li>
-                <li><a href="#contacto" class="footer__lista--simple" tabindex="25">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="footer__contacto--logo"><!--lo reemplace por la lista / segundo menu --> 
-        <ul class="footer__lista">
-            <li class="footer__link"><a href="https://www.linkedin.com/in/gisella-ortiz-de-la-tabla-35a33315a/" tabindex="26"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li class="footer__link"><a href="mailto:gisellanalia@gmail.com" tabindex="27"><i class="fa-regular fa-envelope"></i></a></li>
-            <li class="footer__link"><a href="https://twitter.com/gisella_ot" tabindex="28"><i class="fa-brands fa-twitter"></i></a></li>
-            <li class="footer__link" ><a href="https://github.com/GiseOt" tabindex="29"><i class="fa-brands fa-github-alt"></i></a></li>
-        </ul>
-        <p class="footer__parrafo">Hecho con 💜 por Gisella</p>
-        </div>
-    </footer>
-        <!--script Fontawesome -->
-        <script src="https://kit.fontawesome.com/04baa38fa8.js" crossorigin="anonymous"></script>
-        <!--script Modal-->
-        <script>
-            const bodyTag = document.querySelector("body");
-            const openModalLink = document.querySelector(".open-modal-link");
-            const modalAcceptBtn = document.querySelector(".modal__btn");
+			openModalLink.addEventListener("click", () => {
+				bodyTag.classList.add("open__modal");
+			});
+
+			modalAcceptBtn.addEventListener("click", () => {
+				bodyTag.classList.remove("open__modal");
+			});
+		</script>
+		<!--script Animación Scroll-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!--script para inicializar mi Animación Scroll-->
+		<script>
+			AOS.init({
+				duration: 1000,
+			});
+		</script>
         
-            openModalLink.addEventListener("click", () => {
-                bodyTag.classList.add("open__modal");
-            });
-        
-            modalAcceptBtn.addEventListener("click", () => {
-                bodyTag.classList.remove("open__modal");
-            });
-        </script>
-        <!--script Animación Scroll-->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <!--script para inicializar mi Animación Scroll-->
-        <script>
-            AOS.init({
-                duration: 1000
-            });
-        </script>
-</body>
+	</body>
 </html>
