@@ -236,6 +236,7 @@
 						<form
 							action="https://formsubmit.co/gisellanalia@gmail.com"
 							method="POST"
+                            id="contactForm"
 						>
 							<h2 class="formulario__titulo" data-aos="fade-up">¿Hablamos?</h2>
 							<fieldset>
@@ -354,7 +355,7 @@
 				</ul>
 			</nav>
 			<div class="footer__contacto--logo">
-				<!--lo reemplace por la lista / segundo menu -->
+				
 				<ul class="footer__lista">
 					<li class="footer__link">
 						<a
@@ -387,27 +388,51 @@
 			src="https://kit.fontawesome.com/04baa38fa8.js"
 			crossorigin="anonymous"
 		></script>
-		<!--script Modal-->
-		<script>
-			const bodyTag = document.querySelector("body");
-			const openModalLink = document.querySelector(".open-modal-link");
-			const modalAcceptBtn = document.querySelector(".modal__btn");
 
-			openModalLink.addEventListener("click", () => {
-				bodyTag.classList.add("open__modal");
-			});
+	<!--script Modal-->
+		  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const bodyTag = document.querySelector("body");
+    const form = document.getElementById("contactForm");
+    const modalAcceptBtn = document.querySelector(".modal__btn");
 
-			modalAcceptBtn.addEventListener("click", () => {
-				bodyTag.classList.remove("open__modal");
-			});
-		</script>
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        if (validarCampos()) {
+            bodyTag.classList.add("open__modal");
+        } else {
+            alert("Por favor completa todos los campos antes de continuar.");
+        }
+    });
+
+    modalAcceptBtn.addEventListener("click", function() {
+       
+        form.submit(); 
+    });
+
+    // Validar campos
+
+    function validarCampos() {
+        let camposCompletos = true;
+
+      
+        const inputs = form.querySelectorAll("input[required], textarea[required]");
+        inputs.forEach(input => {
+            if (input.value.trim() === '') {
+                camposCompletos = false;
+            }
+        });
+
+        return camposCompletos;
+    }
+});
+    </script>
 		<!--script Animación Scroll-->
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<!--script para inicializar mi Animación Scroll-->
 		<script>
 			AOS.init({
 				duration: 1000,
 			});
 		</script>
-	</body>
 </html>

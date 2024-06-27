@@ -604,12 +604,12 @@ textarea:focus {
 /*Enviar*/
 input[type="submit"] {
 	display: block;
-	padding: 15px 25px;
-	margin: 0 5px; /* 0 auto para centar*/
+	padding: 15px 75px;
+	border-radius: 25px;
+	margin:0 auto; 
 	background-color: rgb(190, 156, 221);
 	color: white;
 	border: 2px solid rgb(228, 226, 226);
-	border-radius: 25px;
 	font-weight: bolder;
 	transition-property: background-color;
 	transition-duration: 1s;
@@ -621,7 +621,7 @@ input[type="submit"]:hover {
 
 /*---Estilos para el modal---- */
 .modal__container {
-	display: none;
+	display: none; 
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -650,8 +650,8 @@ input[type="submit"]:hover {
 	border: 2px solid rgb(228, 226, 226);
 	border-radius: 20px;
 	display: block;
-	padding: 5px 10px;
-	margin: 5px auto;
+	padding: 10px 50px;
+	margin: 10px auto;
 }
 
 .modal__btn:hover {
